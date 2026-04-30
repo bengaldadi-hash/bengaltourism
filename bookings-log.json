@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-03-02T08:42:49.992Z",
+    "type": "tour",
+    "customer": {
+      "name": "harshit",
+      "email": "mharshit246@gmail.com",
+      "phone": "+91 9729959292",
+      "address": "hasnu",
+      "pinCode": "224001"
+    },
+    "booking": {
+      "destination": "digha",
+      "dates": {
+        "checkIn": "02-03-2026",
+        "checkOut": "06-03-2026"
+      },
+      "travelers": {
+        "adults": 3,
+        "children": 3
+      },
+      "costs": {
+        "bookingAmount": "28575",
+        "estimatedCost": "57150",
+        "totalNights": "4"
+      },
+      "paymentType": "partial"
+    },
+    "additional": {
+      "specialInfo": "",
+      "promoCode": "",
+      "membershipNo": "",
+      "pickupPlace": "digha",
+      "dropPlace": "digha"
+    }
+  },
+  {
+    "timestamp": "2026-03-02T08:46:43.958Z",
+    "type": "tour",
+    "customer": {
+      "name": "harshit",
+      "email": "mharshit246@gmail.com",
+      "phone": "+91 9729959292",
+      "address": "hasnu",
+      "pinCode": "224001"
+    },
+    "booking": {
+      "destination": "digha",
+      "dates": {
+        "checkIn": "02-03-2026",
+        "checkOut": "06-03-2026"
+      },
+      "travelers": {
+        "adults": 3,
+        "children": 3
+      },
+      "costs": {
+        "bookingAmount": "28575",
+        "estimatedCost": "57150",
+        "totalNights": "4"
+      },
+      "paymentType": "partial"
+    },
+    "additional": {
+      "specialInfo": "",
+      "promoCode": "",
+      "membershipNo": "",
+      "pickupPlace": "digha",
+      "dropPlace": "digha"
+    }
+  },
+  {
+    "timestamp": "2026-03-02T08:58:50.435Z",
+    "type": "tour",
+    "customer": {
+      "name": "Harish Maurya",
+      "email": "mharshit1309@gmail.com",
+      "phone": "+91 8429761056",
+      "address": "Niywana road faizabad",
+      "pinCode": "224001"
+    },
+    "booking": {
+      "destination": "digha",
+      "dates": {
+        "checkIn": "02-03-2026",
+        "checkOut": "05-03-2026"
+      },
+      "travelers": {
+        "adults": 3,
+        "children": 1
+      },
+      "costs": {
+        "bookingAmount": "15925",
+        "estimatedCost": "31850",
+        "totalNights": "3"
+      },
+      "paymentType": "partial"
+    },
+    "additional": {
+      "specialInfo": "",
+      "promoCode": "",
+      "membershipNo": "",
+      "pickupPlace": "",
+      "dropPlace": ""
+    }
+  }
+]
