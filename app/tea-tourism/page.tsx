@@ -95,9 +95,9 @@ export default function TeaTourismPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden">
+              <div className="relative h-auto rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1602020277972-99978250c8bd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVhJTIwcGxhbnRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+                  src="/tea.png"
                   alt="Tea plantation with workers plucking tea leaves"
                   className="w-full h-full object-cover"
                 />

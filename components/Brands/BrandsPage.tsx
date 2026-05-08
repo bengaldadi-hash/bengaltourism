@@ -5,21 +5,9 @@ import Image from "next/image";
 import { Star, MapPin, X } from "lucide-react";
 
 const brands = [
+
   {
     id: 1,
-    name: "Best Gold Jewellery Store",
-    location: "KOLKATA",
-    category: "jewellery",
-    price: null,
-    action: "View Details",
-    featured: true,
-    image: "",
-    description: "Premium jewellery collection with traditional and modern designs",
-    rating: 4.8,
-    reviews: 156
-  },
-  {
-    id: 2,
     name: "BEST BENGALI CUISINE",
     location: "KOLKATA",
     category: "food",
@@ -32,7 +20,7 @@ const brands = [
     reviews: 289
   },
   {
-    id: 3,
+    id: 2,
     name: "BEST TANGAIL SAREE",
     location: "FULIA",
     category: "handloom",
@@ -44,21 +32,9 @@ const brands = [
     rating: 4.7,
     reviews: 98
   },
+
   {
-    id: 4,
-    name: "BEST DIAMOND JEWELLERY STORE",
-    location: "KOLKATA",
-    category: "jewellery",
-    price: null,
-    action: "View Details",
-    featured: true,
-    image: "",
-    description: "Exquisite diamond jewellery and precious gemstones",
-    rating: 4.9,
-    reviews: 203
-  },
-  {
-    id: 5,
+    id: 3,
     name: "BEST DARJEELING TEA",
     location: "DARJEELING",
     category: "food",
@@ -71,7 +47,7 @@ const brands = [
     reviews: 167
   },
   {
-    id: 6,
+    id: 4,
     name: "BEST ROSOGOLLA STORE",
     location: "KOLKATA",
     category: "food",
@@ -84,7 +60,7 @@ const brands = [
     reviews: 134
   },
   {
-    id: 7,
+    id: 5,
     name: "BEST PATACHITRA CRAFTS",
     location: "MIDNAPORE",
     category: "crafts",
@@ -97,7 +73,7 @@ const brands = [
     reviews: 89
   },
   {
-    id: 8,
+    id: 6,
     name: "BEST JUTE PRODUCTS",
     location: "HOOGLY",
     category: "crafts",
@@ -110,7 +86,7 @@ const brands = [
     reviews: 112
   },
   {
-    id: 9,
+    id: 7,
     name: "BEST TOURISM PARTNER",
     location: "BENGAL - ODISHA - SIKKIM",
     category: "travel",
@@ -123,7 +99,7 @@ const brands = [
     reviews: 278
   },
   {
-    id: 10,
+    id: 8,
     name: "BEST KANTHA EMBROIDERY",
     location: "RURAL BENGAL",
     category: "crafts",
@@ -136,7 +112,7 @@ const brands = [
     reviews: 76
   },
   {
-    id: 11,
+    id: 9,
     name: "BEST DOKRA ARTEFACTS",
     location: "BANKURA",
     category: "crafts",
@@ -149,7 +125,7 @@ const brands = [
     reviews: 94
   },
   {
-    id: 12,
+    id: 10,
     name: "BEST DHAKAI SAREE",
     location: "WEST BENGAL",
     category: "handloom",
@@ -162,7 +138,7 @@ const brands = [
     reviews: 103
   },
   {
-    id: 13,
+    id: 11,
     name: "BEST JAMDANI SAREE",
     location: "SANTIPUR",
     category: "handloom",
@@ -175,7 +151,7 @@ const brands = [
     reviews: 187
   },
   {
-    id: 14,
+    id: 12,
     name: "BEST PRAWN MALAI CURRY",
     location: "KOLKATA",
     category: "food",
@@ -188,7 +164,7 @@ const brands = [
     reviews: 156
   },
   {
-    id: 15,
+    id: 13,
     name: "BEST HILSA (ILISH) DISHES",
     location: "KOLKATA",
     category: "food",
@@ -201,7 +177,7 @@ const brands = [
     reviews: 198
   },
   {
-    id: 16,
+    id: 14,
     name: "BEST TRAVEL PARTNER",
     location: "KOLKATA - INDIA",
     category: "travel",
@@ -214,7 +190,7 @@ const brands = [
     reviews: 145
   },
   {
-    id: 17,
+    id: 15,
     name: "BEST BELL METAL / KAANSHA PRODUCTS",
     location: "BURDWAN",
     category: "crafts",
@@ -227,7 +203,7 @@ const brands = [
     reviews: 67
   },
   {
-    id: 18,
+    id: 16,
     name: "BEST TERRACOTTA PRODUCTS",
     location: "BANKURA",
     category: "crafts",
@@ -240,7 +216,7 @@ const brands = [
     reviews: 89
   },
   {
-    id: 19,
+    id: 17,
     name: "BEST CLAY MODELS",
     location: "KRISHNANAGAR",
     category: "crafts",
@@ -253,7 +229,7 @@ const brands = [
     reviews: 56
   },
   {
-    id: 20,
+    id: 18,
     name: "BEST MASK / MUKHOSH",
     location: "PURULIA",
     category: "crafts",
@@ -266,7 +242,7 @@ const brands = [
     reviews: 78
   },
   {
-    id: 21,
+    id: 19,
     name: "BEST BALUCHARI SAREE",
     location: "MURSHIDABAD",
     category: "handloom",
@@ -279,7 +255,7 @@ const brands = [
     reviews: 92
   },
   {
-    id: 22,
+    id: 20,
     name: "BEST WOODEN / GAMIRA PRODUCTS",
     location: "DINAJPUR",
     category: "crafts",
@@ -292,7 +268,7 @@ const brands = [
     reviews: 71
   },
   {
-    id: 23,
+    id: 21,
     name: "BEST ELECTRONIC SHOP",
     location: "KOLKATA",
     category: "electronics",
@@ -305,7 +281,7 @@ const brands = [
     reviews: 234
   },
   {
-    id: 23,
+    id: 22,
     name: "Best Leather Goods Store",
     location: "KOLKATA",
     category: "leahter",
@@ -331,10 +307,10 @@ const brands = [
     reviews: 234
   },
   {
-    id: 23,
+    id: 24,
     name: "Best Chinese Restaurant ",
     location: "KOLKATA",
-       category: "food",
+    category: "food",
     price: null,
     action: "Shop & Order Online",
     featured: true,
@@ -344,10 +320,10 @@ const brands = [
     reviews: 234
   },
   {
-    id: 23,
+    id: 25,
     name: "Best Mughlai Restaurent ",
     location: "KOLKATA",
-       category: "food",
+    category: "food",
     price: null,
     action: "Shop & Order Online",
     featured: true,
@@ -357,7 +333,7 @@ const brands = [
     reviews: 234
   },
   {
-    id: 24,
+    id: 26,
     name: "DERAJ - TREASURE TROVE",
     location: "BENGAL HANDLOOMS",
     category: "handloom",
@@ -370,7 +346,7 @@ const brands = [
     reviews: 167
   },
   {
-    id: 25,
+    id: 27,
     name: "BEST BENGALI THALI MEALS",
     location: "KOLKATA",
     category: "food",
@@ -383,7 +359,7 @@ const brands = [
     reviews: 189
   },
   {
-    id: 26,
+    id: 27,
     name: "BEST FOOD HOME DELIVERY",
     location: "KOLKATA",
     category: "food",
@@ -396,7 +372,7 @@ const brands = [
     reviews: 123
   },
   {
-    id: 27,
+    id: 28,
     name: "MAYFAIR RESORTS & SPA",
     location: "DARJEELING",
     category: "hotels",
@@ -409,7 +385,7 @@ const brands = [
     reviews: 267
   },
   {
-    id: 28,
+    id: 29,
     name: "MAYFAIR RESORT & CASINO",
     location: "GANGTOK",
     category: "hotels",
@@ -422,7 +398,7 @@ const brands = [
     reviews: 198
   },
   {
-    id: 29,
+    id: 30,
     name: "MAYFAIR HERITAGE & WAVES",
     location: "PURI",
     category: "hotels",
@@ -435,7 +411,7 @@ const brands = [
     reviews: 189
   },
   {
-    id: 30,
+    id: 31,
     name: "MAYFAIR HIMALAYAN",
     location: "KALIMPONG",
     category: "hotels",
@@ -448,7 +424,7 @@ const brands = [
     reviews: 176
   },
   {
-    id: 31,
+    id: 32,
     name: "BEST BIRIYANI HOUSE",
     location: "KOLKATA",
     category: "food",
@@ -461,10 +437,10 @@ const brands = [
     reviews: 145
   },
   {
-    id: 32,
+    id: 33,
     name: "Best Bengali Cousine Restaurant ",
     location: "HOOGLY",
-        category: "food",
+    category: "food",
     price: null,
     action: "View Details",
     featured: false,
@@ -480,6 +456,8 @@ export default function BrandsPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState<any>(null);
+  const [showVideoModal, setShowVideoModal] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState<string>("");
 
   const categories = [
     { id: "all", name: "All Categories", icon: "🏪" },
@@ -571,16 +549,178 @@ export default function BrandsPage() {
           </div>
         </div>
       </section>
+<section className="bg-white px-4 py-16">
+   <div className="max-w-7xl mx-auto bg-white px-4 py-16">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
+    {/* ================= TOP GOLD JEWELLERY SHOP ================= */}
+    <section className="flex ">
+      <div className="w-full">
 
+     
 
+        {/* Card */}
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-yellow-400 h-full">
+
+          {/* Landscape Video */}
+          <div className="relative h-[500px]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+              poster="/brand-home.png"
+            >
+              <source src="/add/add.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end">
+              <div className="p-6 w-full">
+
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+                  {/* Left Content */}
+                  <div className="text-white">
+                    <h3 className="text-2xl font-bold mb-2">
+                      Premium Gold Jewellery
+                    </h3>
+
+                    <p className="text-white/90 mb-4">
+                      Visit our store in Kolkata for the finest collection
+                    </p>
+
+                    <div className="flex items-center gap-2 text-white/80">
+                      <MapPin className="w-5 h-5" />
+                      <span>KOLKATA</span>
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex flex-col gap-3 w-full sm:w-auto">
+
+                    <a
+                      href="https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20gold%20jewellery%20collection"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                    >
+                  
+
+                      WhatsApp Us
+                    </a>
+
+                    <button
+                      onClick={() => {
+                        setSelectedVideo("/add/add.mp4");
+                        setShowVideoModal(true);
+                      }}
+                      className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
+                      View Details
+                    </button>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ================= TOP DIAMOND JEWELLERY STORE ================= */}
+    <section className="flex">
+      <div className="w-full">
+
+   
+
+        {/* Card */}
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-blue-400 h-full">
+
+          {/* Portrait Video */}
+          <div className="relative h-[500px] bg-black flex justify-center">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-auto object-contain"
+              poster="/brand-home.png"
+            >
+              <source src="/add/add1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end">
+              <div className="p-6 w-full">
+
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+                  {/* Left Content */}
+                  <div className="text-white">
+                    <h3 className="text-2xl font-bold mb-2">
+                      Exquisite Diamond Collection
+                    </h3>
+
+                    <p className="text-white/90 mb-4">
+                      Premium diamonds and precious gemstones in Kolkata
+                    </p>
+
+                    <div className="flex items-center gap-2 text-white/80">
+                      <MapPin className="w-5 h-5" />
+                      <span>KOLKATA</span>
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex flex-col gap-3 w-full sm:w-auto">
+
+                    <a
+                      href="https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20diamond%20jewellery%20collection"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                    >
+                 
+
+                      WhatsApp Us
+                    </a>
+
+                    <button
+                      onClick={() => {
+                        setSelectedVideo("/add/add1.mp4");
+                        setShowVideoModal(true);
+                      }}
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
+                      View Details
+                    </button>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+ </section>
       {/* ================= BRANDS GRID ================= */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          
+
 
             {/* Brand Cards with Advertisement Insertion */}
             {filteredBrands.map((brand, index) => {
@@ -599,8 +739,8 @@ export default function BrandsPage() {
                           </div>
                           <h3 className="text-2xl font-bold mb-2">Advertise Your Brand Here</h3>
                           <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                            Join Brand Bengal and promote your business to thousands of potential customers across West Bengal and beyond. 
-Whether you run an electronics shop, jewellery store, restaurant, hotel, or any local business, we help you showcase your brand, attract more customers, and grow your business through powerful online promotion.
+                            Join Brand Bengal and promote your business to thousands of potential customers across West Bengal and beyond.
+                            Whether you run an electronics shop, jewellery store, restaurant, hotel, or any local business, we help you showcase your brand, attract more customers, and grow your business through powerful online promotion.
                           </p>
                         </div>
 
@@ -654,8 +794,8 @@ Whether you run an electronics shop, jewellery store, restaurant, hotel, or any 
                             <div className="text-center">
                               <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                                 </svg>
                               </div>
                               <h4 className="text-sm font-bold text-yellow-800 mb-1">Advertise Your Brand Here</h4>
@@ -756,8 +896,8 @@ Whether you run an electronics shop, jewellery store, restaurant, hotel, or any 
                         <div className="text-center">
                           <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
                             <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                              <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                              <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                             </svg>
                           </div>
                           <h4 className="text-sm font-bold text-yellow-800 mb-1">Advertise Your Brand Here</h4>
@@ -918,9 +1058,23 @@ Whether you run an electronics shop, jewellery store, restaurant, hotel, or any 
               {/* Buttons */}
               <div className="grid grid-cols-2 gap-4">
 
-                <button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 rounded-xl transition">
-                  Contact Brand
-                </button>
+                {(selectedBrand.name === "Top Gold Jewellery Shop" || selectedBrand.name === "BEST DIAMOND JEWELLERY STORE") ? (
+                  <a
+                    href={`https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20${selectedBrand.name === "Top Gold Jewellery Shop" ? "gold" : "diamond"}%20jewellery%20collection`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.024 6.99 2.882a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" />
+                    </svg>
+                    WhatsApp Us
+                  </a>
+                ) : (
+                  <button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 rounded-xl transition">
+                    Contact Brand
+                  </button>
+                )}
 
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition">
                   Visit Website
@@ -950,6 +1104,61 @@ Whether you run an electronics shop, jewellery store, restaurant, hotel, or any 
           </div>
         </div>
       </section>
+
+      {/* ================= VIDEO MODAL ================= */}
+      {showVideoModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4">
+          <div className="bg-black rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl flex flex-col">
+            
+            {/* Video Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-800">
+              <h3 className="text-white font-semibold text-lg">Jewellery Video</h3>
+              <button
+                onClick={() => {
+                  setShowVideoModal(false);
+                  setSelectedVideo("");
+                }}
+                className="text-white/80 hover:text-white p-2 rounded-full hover:bg-white/10 transition"
+              >
+                <X size={20} className="text-white" />
+              </button>
+            </div>
+
+            {/* Video Container */}
+            <div className="flex-1 flex items-center justify-center p-4">
+              <video
+                autoPlay
+                controls
+                className="w-full h-auto max-h-[70vh] rounded-lg"
+                playsInline
+              >
+                <source src={selectedVideo} type="video/mp4" />
+                Your browser does not support video tag.
+              </video>
+            </div>
+
+            {/* Video Footer */}
+            <div className="p-4 border-t border-gray-800">
+              <div className="flex items-center justify-between">
+                <div className="text-white/80 text-sm">
+                  Click play button to enable sound
+                </div>
+                <a 
+                  href="https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20jewellery%20collection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition flex items-center gap-2"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.024 6.99 2.882a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+                  </svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
