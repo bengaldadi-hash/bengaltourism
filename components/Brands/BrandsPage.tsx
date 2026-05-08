@@ -585,7 +585,7 @@ export default function BrandsPage() {
                   {/* Left Content */}
                   <div className="text-white">
                     <h3 className="text-2xl font-bold mb-2">
-                      Premium Gold Jewellery
+                       Senco  Gold Jewellery
                     </h3>
 
                     <p className="text-white/90 mb-4">
@@ -664,7 +664,7 @@ export default function BrandsPage() {
                   {/* Left Content */}
                   <div className="text-white">
                     <h3 className="text-2xl font-bold mb-2">
-                      Exquisite Diamond Collection
+                    Senco Diamond Collection
                     </h3>
 
                     <p className="text-white/90 mb-4">

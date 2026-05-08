@@ -78,6 +78,19 @@ export default function MedicalTourismPage() {
     },
     {
       id: 2,
+      name: "TOP AYURVEDIC WELLNESS",
+      category: "AYURVEDIC TREATMENT",
+      location: "KOLKATA",
+      description: "Traditional Ayurvedic treatments and holistic wellness therapies for complete mind-body healing",
+      image: "",
+      rating: 4.9,
+      reviews: 890,
+      price: "Starting from ₹25,000",
+      color: "from-green-500 to-emerald-500",
+      icon: Leaf
+    },
+    {
+      id: 3,
       name: "APOLLO GLENEAGLES",
       category: "HIGHEST BILLING HOSPITAL",
       location: "KOLKATA",
@@ -90,8 +103,8 @@ export default function MedicalTourismPage() {
       icon: IndianRupee
     },
     {
-      id: 3,
-      name: "NH RABINDRANATH TAGORE",
+      id: 4,
+      name: "Rabindranath Tagore Cardiac Science",
       category: "TOP CARDIOLOGY HOSPITAL",
       location: "MUKUNDAPUR",
       description: "Leading cardiac care center with expert cardiologists and state-of-the-art heart treatment facilities",
@@ -103,7 +116,7 @@ export default function MedicalTourismPage() {
       icon: HeartPulse
     },
     {
-      id: 4,
+      id: 5,
       name: "RN TAGORE HOSPITAL",
       category: "BEST NEUROSURGERY HOSPITAL",
       location: "KOLKATA",
@@ -115,19 +128,7 @@ export default function MedicalTourismPage() {
       color: "from-purple-500 to-indigo-500",
       icon: Brain
     },
-    {
-      id: 5,
-      name: "NH RABINDRANATH TAGORE",
-      category: "BEST ORTHOPEDIC HOSPITAL",
-      location: "KOLKATA",
-      description: "Specialized orthopedic care with advanced joint replacement and trauma surgery facilities",
-      image: "",
-      rating: 4.7,
-      reviews: 890,
-      price: "Starting from ₹40,000",
-      color: "from-orange-500 to-yellow-500",
-      icon: Bone
-    },
+
     {
       id: 6,
       name: "DESUN HOSPITAL",
