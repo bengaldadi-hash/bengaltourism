@@ -132,7 +132,7 @@ export default function HotelBookingPage() {
                           <h4 className="font-bold text-sm mb-2 text-gray-800 leading-tight">{room.type}</h4>
                           <p className="text-xs text-gray-600 mb-2">{room.meals}</p>
                           <p className="text-xl font-bold text-blue-600 mb-3">{room.price}</p>
-                          <div className='flex gap-3 flex-col'>
+                          <div className='flex gap-3 flex-col '>
                             <button onClick={handleBookNow} className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 rounded-lg text-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition">
                               Book Now
                             </button>

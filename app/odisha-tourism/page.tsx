@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { MapPin, Calendar, Users, Star, Clock, Camera, Sun, Home, IndianRupee, Award, Compass, Utensils, Building, Trees, Ship, Sparkles, Train, ShoppingBag, Book, Mountain, Waves, Fish, Bird, Tent, Flame, PartyPopper, Heart, Sprout, Coffee, Leaf, TreePine, Stethoscope, HeartPulse, Shield, Globe, Phone, Mail, CheckCircle, AlertCircle, Activity, Brain, Bone, Eye, User, Bed, Wifi, Car, Utensils as UtensilsIcon, Wind, Building as Temple, Waves as WavesIcon, Compass as CompassIcon } from 'lucide-react'
 import ContactCTA from '@/components/ContactCTA'
 import PackagePricing from '@/components/PackagePricing'
+import Link from "next/link"
 
 export default function OdishaTourismPage() {
   return (
@@ -59,6 +60,8 @@ export default function OdishaTourismPage() {
           </div>
         </div>
       </section>
+
+     
 
       {/* ================= PURI PACKAGE ================= */}
       <section className="py-20 bg-white">
@@ -275,6 +278,34 @@ export default function OdishaTourismPage() {
 
         </div>
       </div>
+
+             <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+
+            <div className="flex items-center gap-5  mb-4">
+              <h3 className="text-3xl font-bold text-gray-900">
+                Hotel names at Puri
+              </h3>
+              <Link href="/book-hotel" className="bg-gradient-to-r rounded-full from-yellow-600 to-yellow-600 text-white px-6 py-3  hover:from-blue-700 hover:to-cyan-700 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                Book Now
+              </Link>
+            </div>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Puri is one of the most popular pilgrimage and beach destinations in Odisha,
+              famous for the sacred Jagannath Temple and the serene coastline along the Bay of Bengal.
+              Every year thousands of devotees and tourists visit Puri to attend the world-renowned
+              Rath Yatra festival and enjoy the peaceful sea breeze at Golden Beach.
+              From luxury sea-facing resorts and premium beach hotels to budget-friendly stays
+              near VIP Road and Swargadwar, Puri offers accommodation options suitable for
+              families, couples, pilgrims and leisure travelers. Many hotels are located close
+              to the beach, Jagannath Temple and Marine Drive, making sightseeing and relaxation
+              convenient for visitors.
+            </p>
+            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
+              Seagull / Park Beach / Camellia / Sagarika / Golden Tree / Puri Beach Resort / Golden Beach / Beach View / Victoria / Atithi  /  Raj / Suv Palace /  Diamond  / Sea Hawk / Sonar Bangla /  Sea View / East-West / Empires / Blue Lily / Prabhu Pada / Niladri / Shree Hari / Sea Wave / Landmark / Puri Inn Hotel / Sankhabela / Deep Resort / Surya Beach / Royal Palace / Hans Coco / Zamindar Palace / Dreamland / Sterling / Chariot (or) *Similar* (On VIP Road) Golden Palace / Nayak Beach / Sandy Villa / Tohshali Sands  / Sapphire / MH Residence / Krishna Palace / Sagar Tarang / Mayfair Waves / Holiday Inn (or) Similar Properties
+            </div>
+             </div>
+          </section>
       {/* ================= ODISHA HIGHLIGHTS ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
