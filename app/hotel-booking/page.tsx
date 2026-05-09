@@ -387,7 +387,7 @@ export default function HotelBookingPage() {
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               We offer carefully selected hotels, luxury resorts, boutique stays and eco-friendly home stays across
               Darjeeling, Dooars, Sundarban, Gangtok, Puri, Digha and other popular destinations.
-              Our accommodations range from premium heritage properties to sustainable community-based homestays.
+              Our accommodations range from premium heritage properties to sustainable community-based homestays. Accommodation / Rooms  will be provided at Hotel / Resort as per your choice / budget [or] as available at any of the Hotel Room & Guest House / Holiday Home / Tourist Lodge by Bengal Tourism on Main throughfare & the guests will fully accept & abide by this.
             </p>
           </header>
 
@@ -776,7 +776,6 @@ export default function HotelBookingPage() {
               <span className="font-semibold text-green-700"> Save Environment, Save Earth.</span>
             </p>
           </section>
-
         </div>
       </section>
 
