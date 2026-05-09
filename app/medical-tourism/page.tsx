@@ -507,6 +507,9 @@ const hospitals = [
             {hospitals.map((hospital, index) => (
               <div key={hospital.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
                 {/* Image */}
+                   <div className="mb-4">
+                    <h3 className="text-xl font-bold text-gray-900">{hospital.name}</h3>
+                  </div>
                 <div className="relative h-56 flex items-center justify-center bg-gray-50">
                   {hospital.image ? (
                     <Image
@@ -553,7 +556,7 @@ const hospitals = [
 
                   {/* Title */}
                   <div className="mb-4">
-                    <h3 className="text-xl font-bold text-gray-900">{hospital.name}</h3>
+                    <h3 className="text-xl font-bold text-gray-900">{hospital.hospitalName}</h3>
                   </div>
 
                   {/* Rating */}

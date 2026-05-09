@@ -558,11 +558,7 @@ export default function BrandsPage() {
     </span>
   </h2>
 
-  <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-    Explore our exclusive collection of premium gold, diamond & luxury jewellery
-    crafted with timeless elegance, modern artistry, and unmatched purity for
-    every special occasion.
-  </p>
+
 </div>
   <div className="grid grid-cols-1 gap-8 items-stretch">
 
