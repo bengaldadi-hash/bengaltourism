@@ -250,7 +250,7 @@ export default function BrandsPage() {
       <section className="bg-white px-4 py-16">
         <div className="max-w-7xl mx-auto bg-white px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-700 bg-clip-text text-transparent">
                 Top Gold Jewellery Brand
               </span>
@@ -288,7 +288,7 @@ export default function BrandsPage() {
 
                   {/* Heading */}
                   <div className="mb-5">
-                    <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                       Senco Gold & Diamonds
                     </h3>
 
