@@ -82,7 +82,7 @@ const hospitals = [
   {
     id: 2,
     name: "Top Orthopedic Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Specialized orthopedic treatments including joint replacement, spine surgery, sports injury care, and advanced bone care solutions.",
@@ -97,7 +97,7 @@ const hospitals = [
   {
     id: 3,
     name: "Ayurvedic Wellness Center",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Traditional Ayurvedic healing therapies, detox treatments, wellness programs, yoga, meditation, and holistic healthcare services.",
@@ -113,7 +113,7 @@ const hospitals = [
   {
     id: 4,
     name: "Top Cancer Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Comprehensive oncology care with chemotherapy, radiation therapy, cancer surgery, and world-class cancer treatment specialists.",
@@ -129,7 +129,7 @@ const hospitals = [
   {
     id: 5,
     name: "Top Neuro Science Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Advanced neurological treatments for brain, spine, stroke, epilepsy, and neurosurgery using cutting-edge medical technology.",
@@ -145,7 +145,7 @@ const hospitals = [
   {
     id: 6,
     name: "Top Fertility Clinic",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Complete fertility treatments including IVF, IUI, reproductive care, pregnancy support, and family planning solutions.",
@@ -161,7 +161,7 @@ const hospitals = [
   {
     id: 7,
     name: "Top Eye Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Specialized eye treatments including cataract surgery, LASIK, retina care, glaucoma treatment, and pediatric ophthalmology.",
@@ -177,7 +177,7 @@ const hospitals = [
   {
     id: 8,
     name: "Top Liver | Gastronomy Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Expert liver care, gastroenterology treatments, digestive disease management, endoscopy, and advanced GI procedures.",
@@ -193,7 +193,7 @@ const hospitals = [
   {
     id: 9,
     name: "Top Skin | Dermatology Clinic",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Professional skin, hair, laser, cosmetic dermatology, acne treatment, anti-aging, and aesthetic care services.",
@@ -209,7 +209,7 @@ const hospitals = [
   {
     id: 10,
     name: "Top Child | Neo Natal Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Comprehensive pediatric and neonatal healthcare with ICU support, child specialists, vaccination, and emergency care.",
@@ -225,7 +225,7 @@ const hospitals = [
   {
     id: 11,
     name: "Top Multi-speciality Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Complete multi-specialty healthcare services with modern infrastructure, emergency care, diagnostics, and expert doctors.",
@@ -241,7 +241,7 @@ const hospitals = [
   {
     id: 12,
     name: "Top Nephrology Hospital",
-    hospitalName: "Advertise your name here",
+    hospitalName: "Put Advertise your name here",
     location: "KOLKATA",
     description:
       "Advanced kidney care, dialysis, nephrology treatments, kidney transplant support, and renal disease management.",
@@ -600,7 +600,7 @@ const hospitals = [
 
     {/* ================= BOTTOM CONTENT ================= */}
     <div className="p-5 flex flex-col flex-grow">
-    <div className="mb-3">
+    {/* <div className="mb-3">
         <span className="
           inline-flex
           items-center
@@ -615,13 +615,13 @@ const hospitals = [
         ">
           {hospital.category}
         </span>
-      </div>
+      </div> */}
       {/* Hospital Advertiser */}
       <div className="mb-5">
 
-        <p className="text-sm text-gray-500 font-medium">
+        {/* <p className="text-sm text-gray-500 font-medium">
           {hospital.hospitalName}
-        </p>
+        </p> */}
 
       </div>
 
