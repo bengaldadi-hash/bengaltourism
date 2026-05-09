@@ -535,6 +535,8 @@ const hospitals = [
         leading-snug
         group-hover:text-blue-600
         transition
+        text-center 
+        md:text-xl 
       ">
         {hospital.name}
       </h3>
@@ -552,6 +554,7 @@ const hospitals = [
       items-center
       justify-center
       overflow-hidden
+
     ">
 
       {hospital.image ? (
@@ -619,7 +622,7 @@ const hospitals = [
       {/* Hospital Advertiser */}
       <div className="mb-5">
 
-        <p className="text-lg text-gray-900 font-bold">
+        <p className="text-lg md:text-xl   text-center text-gray-900 font-bold">
           {hospital.hospitalName}
         </p>
 

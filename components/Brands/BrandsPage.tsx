@@ -350,7 +350,16 @@ export default function BrandsPage() {
                 {/* ================= BRAND NAME ================= */}
                 <div className="px-5 pt-5">
 
-                  <h3 className="text-base font-bold text-gray-900 group-hover:text-yellow-600 transition text-left">
+                       <h3 className="
+        text-lg md:text-xl
+        font-bold
+        text-gray-900
+        leading-snug
+        group-hover:text-blue-600
+        transition
+        text-center 
+        md:text-xl 
+      ">
                     {brand.name}
                   </h3>
 
@@ -411,10 +420,10 @@ export default function BrandsPage() {
                     </span>
                   </div> */}
                   {/* Advertiser Name */}
-                  <div className="mb-4 text-left">
-                    <span className="inline-block  text-lg  font-bold px-2 text-gray-700 rounded-full">
+                  <div className="mb-4 ">
+                  <p className="md:text-xl text-lg text-center text-gray-900 font-bold">
                       {brand.brandName}
-                    </span>
+                    </p>
                   </div>
 
                   {/* Description */}
