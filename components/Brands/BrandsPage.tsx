@@ -26,7 +26,7 @@ const brands = [
       "Latest electronic gadgets, home appliances, smart devices & premium technology products.",
     image: "",
     category: "electronics",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -50,7 +50,7 @@ const brands = [
       "Exclusive saree collections including Jamdani, Tangail, Baluchari & designer handloom sarees.",
     image: "",
     category: "fashion",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -62,7 +62,7 @@ const brands = [
       "Luxury & premium cars with modern features, best offers & customer support services.",
     image: "",
     category: "automobile",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -74,7 +74,7 @@ const brands = [
       "Traditional Bengal handloom collections with authentic craftsmanship & heritage weaving.",
     image: "",
     category: "handloom",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -86,7 +86,7 @@ const brands = [
       "Premium Bengal rice varieties with authentic aroma, purity & traditional taste.",
     image: "",
     category: "food",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -98,7 +98,7 @@ const brands = [
       "Designer boutique fashion, ethnic wear, bridal collections & custom outfits.",
     image: "",
     category: "fashion",
-    action: "Watch Video",
+    action: "View Details",
   },
 
   {
@@ -392,7 +392,7 @@ export default function BrandsPage() {
                   )}
 
                   {/* Location Badge */}
-                  <div className="absolute bottom-4 left-4">
+                  {/* <div className="absolute bottom-4 left-4">
                     <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow">
                       <MapPin className="w-4 h-4 text-yellow-600" />
 
@@ -400,19 +400,19 @@ export default function BrandsPage() {
                         {brand.location}
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* ================= CONTENT ================= */}
                 <div className="p-5 flex flex-col flex-grow">
- <div className="mb-5">
+                  {/* <div className="mb-5">
                     <span className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">
                       {brand.category}
                     </span>
-                  </div>
+                  </div> */}
                   {/* Advertiser Name */}
                   <div className="mb-4 text-left">
-                    <span className="inline-block  text-sm font-semibold px-2 text-gray-500 rounded-full">
+                    <span className="inline-block  text-lg  font-bold px-2 text-gray-700 rounded-full">
                       {brand.brandName}
                     </span>
                   </div>
@@ -423,7 +423,7 @@ export default function BrandsPage() {
                   </p> */}
 
                   {/* Category */}
-                 
+
 
                   {/* Button */}
                   <button
