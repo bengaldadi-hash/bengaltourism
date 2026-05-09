@@ -262,7 +262,7 @@ export default function BrandsPage() {
 
             {/* ================= TOP GOLD JEWELLERY SHOP ================= */}
             <section className="w-full">
-              <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-yellow-300">
+              <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-yellow-300">
 
                 {/* ================= VIDEO ================= */}
                 <div className="relative bg-black">
@@ -284,11 +284,11 @@ export default function BrandsPage() {
                 </div>
 
                 {/* ================= CONTENT BELOW VIDEO ================= */}
-                <div className="p-6 md:p-8">
+                <div className="p-2 md:p-8">
 
                   {/* Heading */}
                   <div className="mb-5">
-                    <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-xl md:text-4xl font-bold text-gray-900 mb-3">
                       Senco Gold & Diamonds
                     </h3>
 
