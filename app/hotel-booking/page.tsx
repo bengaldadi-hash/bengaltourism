@@ -12,6 +12,225 @@ export default function HotelBookingPage() {
   const handleBookNow = () => {
     router.push('/book-hotel')
   }
+  const puriHotels = [
+    "Seagull",
+    "Park Beach",
+    "Camellia",
+    "Sagarika",
+    "Golden Tree",
+    "Puri Beach Resort",
+    "Golden Beach",
+    "Beach View",
+    "Victoria",
+    "Atithi",
+    "Raj",
+    "Suv Palace",
+    "Diamond",
+    "Sea Hawk",
+    "Sonar Bangla",
+    "Sea View",
+    "East-West",
+    "Empires",
+    "Blue Lily",
+    "Prabhu Pada",
+    "Niladri",
+    "Shree Hari",
+    "Sea Wave",
+    "Landmark",
+    "Puri Inn Hotel",
+    "Sankhabela",
+    "Deep Resort",
+    "Surya Beach",
+    "Royal Palace",
+    "Hans Coco",
+    "Zamindar Palace",
+    "Dreamland",
+    "Sterling",
+  ];
+
+  const vipRoadHotels = [
+    "Golden Palace",
+    "Nayak Beach",
+    "Sandy Villa",
+    "Tohshali Sands",
+    "Sapphire",
+    "MH Residence",
+    "Krishna Palace",
+    "Sagar Tarang",
+    "Mayfair Waves",
+    "Holiday Inn",
+  ];
+  const hillHotels = [
+    "Apple Orchard",
+    "Anola",
+    "Bamboo Grove",
+    "Central Heritage",
+    "Chumbi Residency",
+    "Coral Inn",
+    "Central Hotel",
+    "Cherry Guest House",
+    "Casino Mahjong",
+    "Doma Palace",
+    "Doma Residency",
+    "Fortuna",
+    "Juniper",
+    "Mayfair Resorts & Spa & Casino",
+    "Maya Inn",
+    "Mist Tree Mountain",
+    "Oakridge Retreat",
+    "The Oriental",
+    "Riccasa",
+    "Rendezvous",
+    "Royal Plaza",
+    "Sonam Delek",
+    "Silk Route Residency",
+    "Sai Kripa",
+    "Summit Spa",
+    "Tamarind",
+    "Terrace Valley",
+    "Tres Teli",
+    "Tara Palace",
+    "Tashi Delek",
+    "Tashi Thendup",
+    "Tashiling",
+    "Tibet",
+    "White Conch",
+  ];
+  const beachResorts = [
+    "Asha International",
+    "Ambalika",
+    "Blue View",
+    "Dolphin",
+    "Digha Tourist Lodge",
+    "Jai Ram Hi Tide",
+    "JP Hotel",
+    "Garden Retreat",
+    "Gitanjali",
+    "Greenland Inn",
+    "M Plaza",
+    "Ownland Resort",
+    "Peeku's Inn",
+    "Sea View",
+    "Seagull",
+    "Pearl International",
+    "Rajeet",
+    "Reelook",
+    "Sea Green",
+    "Sea Bird",
+    "Sonar Bangla",
+    "Sea Hawk",
+    "Sea Coast",
+    "Sun View Resort",
+    "Sea Sand",
+    "Sea Star Resort",
+  ];
+
+  const hotels = [
+    "Anand Palace",
+    "Ascot",
+    "Broadway",
+    "Bellevue Heritage",
+    "Central Heritage",
+    "Cedar Inn",
+    "Crystal Palace",
+    "Central Nirvana",
+    "Dolphin",
+    "Dreamland",
+    "Dakeling",
+    "Elgin",
+    "Fairmount",
+    "Golden Height Enclave",
+    "Glenary",
+    "Hermitage",
+    "Krishna Residency",
+    "Mayfair Resorts & Spa",
+    "Mayfair Himalayan Retreat",
+    "Maple",
+    "Mt. Royal",
+    "Mt. View",
+    "North Star",
+    "Oasis",
+    "Pineridge",
+    "Pinetree",
+    "Pink Mountain",
+    "Princess",
+    "Palbheu",
+    "R J Resort",
+    "Rhododendron",
+    "Spring Burn",
+    "Sunflower",
+    "Seven Seventeen",
+    "Shangri-La",
+    "Sonar Bangla",
+    "Sinclairs",
+    "Swiss Hotel",
+    "Sterling Snow Lion",
+    "Travellers Inn",
+    "Yuma",
+    "Viceroy",
+    "Windamere",
+  ];
+  const jungleResorts = [
+    "Aranyak Resort",
+    "Bamboo Trail",
+    "Bonani",
+    "Chatakpur Eco Hut",
+    "Dooars Mountain",
+    "Dreamland",
+    "Debrani",
+    "Elephanta Forest",
+    "Forest Inn",
+    "Gorumara",
+    "Green Touch Resort",
+    "Green Lagoon",
+    "Golden Resort",
+    "Green Heaven",
+    "Hatihana Green Castle",
+    "Hollong Tourist Lodge",
+    "Hatari Resort",
+    "Heaven Inn",
+    "Jungle Inn",
+    "Jaldapara Resort",
+    "Jungle Resort",
+    "Jaldapara Inn",
+    "Jaldapara Tourist Lodge",
+    "Kadambini Resort",
+    "Kontiki Resort",
+    "Khairibari Forest Hut",
+    "Lake View",
+    "Murti Tourist Lodge",
+    "Murti River Resort",
+    "Natures Hut",
+    "Neora River Resort",
+    "Pagoda Inn",
+    "Prime Murti",
+    "Pagoda",
+    "Rhino Resort",
+    "Riverwood Forest",
+    "Rovers Inn",
+    "Wild Hut",
+    "Sinclairs Hotel",
+    "Tusker Den",
+  ];
+  const sundarbanHotels = [
+    "Apanjan",
+    "Banani",
+    "Eco Resort",
+    "Mainak",
+    "Mangrove Retreat",
+    "River Side",
+    "Royal Bengal Resort",
+    "Riverwood",
+    "Riverside Holiday",
+    "Sajnekhali Tourist Lodge",
+    "Solitary Nook",
+    "Sudarban Gateway Resort",
+    "Suranjana Resort",
+    "Hotel S-21",
+    "Tiger Camp",
+    "Tiger View Resort",
+    "United 21",
+  ];
 
   const hotelData = [
     {
@@ -142,7 +361,7 @@ export default function HotelBookingPage() {
                               rel="noopener noreferrer"
                               className="inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg text-sm shadow-xl transition-all duration-300 hover:scale-105"
                             >
-                              Chat 
+                              Chat
                             </a>
                           </div>
                         </div>
@@ -187,8 +406,36 @@ export default function HotelBookingPage() {
               Darjeeling, known as the “Queen of the Hills”, offers a blend of colonial charm and modern comfort.
               We provide accommodation options near Mall Road, Chowrasta, tea gardens and scenic viewpoints.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Anand Palace | Ascot | Broadway | Bellevue Heritage | Central Heritage | Cedar Inn | Crystal Palace | Central Nirvana | Central Heritage | Dolphin | Dreamland | Dakeling | Elgin | Fairmount | Golden Height Enclave | Glenary | Hermitage | Krishna Residency | Mayfair Resorts & Spa & Mayfair Himalayan Retreat | Maple | Mt. Royal | Mt. View | North Star | Oasis | Pineridge | Pinetree | Pink Mountain | Princess | Palbheu | R J Resort | Rhododendron | Spring Burn | Sunflower | Seven Seventeen | Shangri-La | Sonar Bangla | Sinclairs / Swiss Hotel | Sterling Snow Lion | Travellers Inn | Yuma | Viceroy | Windamare |  ... & Similar Category Hotels
+            <div className="">
+              <div className="flex flex-wrap gap-3">
+
+                {hotels.map((hotel, index) => (
+                  <a
+                    key={index}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+          px-4 py-2 rounded-full
+          bg-gray-100 text-gray-700
+          hover:bg-green-500 hover:text-white
+          transition-all duration-300
+          text-sm font-medium
+          border border-gray-200
+          hover:scale-105
+          cursor-pointer
+        "
+                  >
+                    {hotel}
+                  </a>
+                ))}
+
+                {/* Last Text */}
+                <span className="px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 text-sm font-semibold border border-yellow-200">
+                  ... & Similar Category Hotels
+                </span>
+
+              </div>
             </div>
           </section>
 
@@ -208,8 +455,48 @@ export default function HotelBookingPage() {
               Our Dooars properties include forest resorts, river-side lodges and eco cottages
               ideal for nature lovers and wildlife enthusiasts.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Aranyak Resort | Bamboo Trail | Bonani | Chatakpur Eco Hut | Dooars Mountain | Dreamland | Debrani | Elephanta Forest | Forest Inn | Gorumara | Green Touch Resort | Green Lagoon | Golden Resort | Green Heaven | Hatihana Green Castle | Hollong Tourist Lodge | Hatari Resort | Heaven Inn | Jungle Inn | Jaldapara Resort | Jungle Resort | Jaldapara Inn | Jaldapara Tourist Lodge | Kadambini Resort | Kontiki Resort | Khairibari Forest Hut | Lake View | Murti Tourist Lodge | Murti River Resort | Natures Hut | Neora River Resort | Pagoda Inn | Prime Murti | Pagoda | Rhino Resort | Riverwood Forest | Rovers Inn | Wild Hut | Sinclairs Hotel | Tusker Den | Wild Hut | ... & Similar Jungle Resorts
+
+
+            <div className="">
+
+              {/* Heading */}
+              <h3 className="text-2xl font-bold text-green-700 mb-5">
+                Jungle Resorts & Forest Stays
+              </h3>
+
+              {/* Resorts */}
+              <div className="flex flex-wrap gap-3">
+
+                {jungleResorts.map((resort, index) => (
+                  <a
+                    key={index}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${resort}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+          px-4 py-2 rounded-full
+          bg-green-50 text-green-800
+          border border-green-200
+          text-sm font-medium
+          transition-all duration-300
+          hover:bg-yellow-400
+          hover:text-black
+          hover:border-yellow-500
+          hover:scale-105
+          shadow-sm hover:shadow-lg
+          cursor-pointer
+        "
+                  >
+                    {resort}
+                  </a>
+                ))}
+
+                {/* Extra Text */}
+                <span className="px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200 text-sm font-semibold">
+                  ... & Similar Jungle Resorts
+                </span>
+
+              </div>
             </div>
           </section>
 
@@ -229,8 +516,47 @@ export default function HotelBookingPage() {
               Our eco-friendly resorts and river-side stays support local communities
               while offering safe and immersive wildlife experiences.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Apanjan | Banani | Eco Resort | Mainak | Mangrove Retreat | River Side | Royal Bengal Resort | Riverwood | Riverside Holiday | Sajnekhali Tourist Lodge | Solitary Nook | Sudarban Gateway Resort | Suranjana Resort | Hotel S-21 | Tiger Camp | Tiger View Resort | United 21 ... & Similar Properties
+
+            <div className="">
+
+              {/* Heading */}
+              <h3 className="text-2xl font-bold text-emerald-700 mb-5">
+                Sundarban Hotels & Resorts
+              </h3>
+
+              {/* Hotel Tags */}
+              <div className="flex flex-wrap gap-3">
+
+                {sundarbanHotels.map((hotel, index) => (
+                  <a
+                    key={index}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+          px-4 py-2 rounded-full
+          bg-emerald-50 text-emerald-800
+          border border-emerald-200
+          text-sm font-medium
+          transition-all duration-300
+          hover:bg-orange-500
+          hover:text-white
+          hover:border-orange-500
+          hover:scale-105
+          hover:shadow-lg
+          cursor-pointer
+        "
+                  >
+                    {hotel}
+                  </a>
+                ))}
+
+                {/* Extra Text */}
+                <span className="px-4 py-2 rounded-full bg-orange-100 text-orange-700 border border-orange-200 text-sm font-semibold">
+                  ... & Similar Properties
+                </span>
+
+              </div>
             </div>
           </section>
 
@@ -255,8 +581,110 @@ export default function HotelBookingPage() {
               to the beach, Jagannath Temple and Marine Drive, making sightseeing and relaxation
               convenient for visitors.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Seagull / Park Beach / Camellia / Sagarika / Golden Tree / Puri Beach Resort / Golden Beach / Beach View / Victoria / Atithi  /  Raj / Suv Palace /  Diamond  / Sea Hawk / Sonar Bangla /  Sea View / East-West / Empires / Blue Lily / Prabhu Pada / Niladri / Shree Hari / Sea Wave / Landmark / Puri Inn Hotel / Sankhabela / Deep Resort / Surya Beach / Royal Palace / Hans Coco / Zamindar Palace / Dreamland / Sterling / Chariot (or) *Similar* (On VIP Road) Golden Palace / Nayak Beach / Sandy Villa / Tohshali Sands  / Sapphire / MH Residence / Krishna Palace / Sagar Tarang / Mayfair Waves / Holiday Inn (or) Similar Properties
+
+
+            <div className="space-y-8">
+
+              {/* ================= BEACH FRONT HOTELS ================= */}
+              <div className="">
+
+                {/* Header */}
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold text-orange-700">
+                    Beach Front Hotels
+                  </h3>
+
+                  <span className="bg-orange-100 text-orange-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
+                    Sea Facing Stay
+                  </span>
+                </div>
+
+                {/* Hotels */}
+                <div className="flex flex-wrap gap-3">
+
+                  {puriHotels.map((hotel, index) => (
+                    <a
+                      key={index}
+                      href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+            px-5 py-2.5
+            rounded-full
+            bg-orange-50
+            text-orange-800
+            border border-orange-200
+            text-sm font-medium
+            transition-all duration-300
+            hover:bg-gradient-to-r
+            hover:from-orange-500
+            hover:to-red-500
+            hover:text-white
+            hover:shadow-xl
+            hover:-translate-y-1
+          "
+                    >
+                      {hotel}
+                    </a>
+                  ))}
+
+                  <div className="px-5 py-2.5 rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200 text-sm font-semibold">
+                    & Similar Properties
+                  </div>
+
+                </div>
+              </div>
+
+              {/* ================= VIP ROAD HOTELS ================= */}
+              <div className="">
+
+                {/* Header */}
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold text-blue-700">
+                    VIP Road Hotels
+                  </h3>
+
+                  <span className="bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
+                    Premium Roadside Stay
+                  </span>
+                </div>
+
+                {/* Hotels */}
+                <div className="flex flex-wrap gap-3">
+
+                  {vipRoadHotels.map((hotel, index) => (
+                    <a
+                      key={index}
+                      href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+            px-5 py-2.5
+            rounded-full
+            bg-blue-50
+            text-blue-800
+            border border-blue-200
+            text-sm font-medium
+            transition-all duration-300
+            hover:bg-gradient-to-r
+            hover:from-blue-500
+            hover:to-cyan-500
+            hover:text-white
+            hover:shadow-xl
+            hover:-translate-y-1
+          "
+                    >
+                      {hotel}
+                    </a>
+                  ))}
+
+                  <div className="px-5 py-2.5 rounded-full bg-cyan-100 text-cyan-700 border border-cyan-200 text-sm font-semibold">
+                    & Similar Properties
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           </section>
 
@@ -277,8 +705,62 @@ export default function HotelBookingPage() {
               Tajpur, Shankarpur, Puri and Gopalpur. Choose from sea-view resorts,
               premium beach villas and family-friendly hotels.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Asha International | Ambalika | Blue View | Dolphin | Digha Tourist Lodge | Jai Ram Hi Tide | JP Hotel | Garden Retreat | Gitanjali | Greenland Inn | M Plaza | Ownland Resort | Peeku's Inn | Sea View | Seagull | | Pearl International | Rajeet | Reelook | Sea Green | Sea Bird | Sonar Bangla | Sea Hawk | Sea Coast | Sun View Resort | Sea Sand | Sea Star Resort | & Similar Beach Resorts
+
+            <div className="">
+
+              {/* Title */}
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-sky-700">
+                  Beach Hotels & Resorts
+                </h3>
+
+                <span className="bg-sky-100 text-sky-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
+                  Sea Side Stay
+                </span>
+              </div>
+
+              {/* Hotels */}
+              <div className="flex flex-wrap gap-3">
+
+                {beachResorts.map((hotel, index) => (
+                  <a
+                    key={index}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+          group
+          relative
+          overflow-hidden
+          px-5 py-2.5
+          rounded-full
+          bg-sky-50
+          text-sky-800
+          border border-sky-200
+          text-sm font-medium
+          transition-all duration-300
+          hover:bg-gradient-to-r
+          hover:from-sky-500
+          hover:to-blue-600
+          hover:text-white
+          hover:border-blue-500
+          hover:shadow-xl
+          hover:-translate-y-1
+          cursor-pointer
+        "
+                  >
+                    <span className="relative z-10">
+                      {hotel}
+                    </span>
+                  </a>
+                ))}
+
+                {/* Last Text */}
+                <div className="px-5 py-2.5 rounded-full bg-gradient-to-r from-orange-100 to-yellow-100 text-orange-700 border border-orange-200 text-sm font-semibold shadow-sm">
+                  & Similar Beach Resorts
+                </div>
+
+              </div>
             </div>
           </section>
 
@@ -298,8 +780,63 @@ export default function HotelBookingPage() {
               Pelling, Ravangla, Lachung and Lachen. Options include spa resorts,
               mountain-view boutique hotels and traditional stays.
             </p>
-            <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200 text-sm text-gray-700 leading-relaxed">
-              Apple Orchard | Anola | Bamboo Grove | Central Heritage | Chumbi Residency | Coral Inn | Central Hotel | Cherry Guest House | Casino Mahjong | Doma Palace | Doma Residency | Fortuna | Juniper | Mayfair Resorts & Spa & Casino | Maya Inn | Mist Tree Mountain | Oakridge Retreat | The Oriental | Riccasa | Rendezvous | Royal Plaza | Sonam Delek | Silk Route Residency | Sai Kripa | Summit Spa | Tamarind | Terrace Valley | Tres Teli | Tara Palace | Tashi Delek / Tashi Thendup | Tashiling | Tibet | White Conch | ... & Similar Hotels
+
+
+            <div className="">
+
+              {/* Header */}
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-purple-700">
+                  Hill Hotels & Mountain Resorts
+                </h3>
+
+                <span className="bg-purple-100 text-purple-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
+                  Mountain Stay
+                </span>
+              </div>
+
+              {/* Hotels */}
+              <div className="flex flex-wrap gap-3">
+
+                {hillHotels.map((hotel, index) => (
+                  <a
+                    key={index}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+          group
+          relative
+          overflow-hidden
+          px-5 py-2.5
+          rounded-full
+          bg-purple-50
+          text-purple-800
+          border border-purple-200
+          text-sm font-medium
+          transition-all duration-300
+          hover:bg-gradient-to-r
+          hover:from-fuchsia-500
+          hover:to-purple-600
+          hover:text-white
+          hover:border-purple-500
+          hover:shadow-xl
+          hover:-translate-y-1
+          cursor-pointer
+        "
+                  >
+                    <span className="relative z-10">
+                      {hotel}
+                    </span>
+                  </a>
+                ))}
+
+                {/* Extra Text */}
+                <div className="px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-100 to-purple-100 text-purple-700 border border-purple-200 text-sm font-semibold shadow-sm">
+                  ... & Similar Hotels
+                </div>
+
+              </div>
             </div>
           </section>
 

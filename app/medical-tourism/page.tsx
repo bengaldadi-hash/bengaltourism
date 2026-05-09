@@ -48,7 +48,8 @@ import {
   Camera,
   Clock,
   Sun,
-  Home
+  Home,
+  Baby
 } from "lucide-react";
 import ContactCTA from '@/components/ContactCTA'
 import PackagePricing from '@/components/PackagePricing'
@@ -62,87 +63,197 @@ export default function MedicalTourismPage() {
     setShowModal(true);
   };
 
-  const hospitals = [
-    {
-      id: 1,
-      name: "TATA MEMORIAL HOSPITAL",
-      category: "TOP CANCER HOSPITAL",
-      location: "KOLKATA",
-      description: "Premier cancer treatment center with world-class oncology services and research facilities",
-      image: "",
-      rating: 4.8,
-      reviews: 1250,
-      price: "Starting from ₹50,000",
-      color: "from-yellow-500 to-pink-500",
-      icon: Award
-    },
-    {
-      id: 2,
-      name: "TOP AYURVEDIC WELLNESS",
-      category: "AYURVEDIC TREATMENT",
-      location: "KOLKATA",
-      description: "Traditional Ayurvedic treatments and holistic wellness therapies for complete mind-body healing",
-      image: "",
-      rating: 4.9,
-      reviews: 890,
-      price: "Starting from ₹25,000",
-      color: "from-green-500 to-emerald-500",
-      icon: Leaf
-    },
-    {
-      id: 3,
-      name: "APOLLO GLENEAGLES",
-      category: "HIGHEST BILLING HOSPITAL",
-      location: "KOLKATA",
-      description: "Premium multi-specialty hospital with international healthcare standards and advanced technology",
-      image: "",
-      rating: 4.7,
-      reviews: 980,
-      price: "Starting from ₹80,000",
-      color: "from-blue-500 to-cyan-500",
-      icon: IndianRupee
-    },
-    {
-      id: 4,
-      name: "Rabindranath Tagore Cardiac Science",
-      category: "TOP CARDIOLOGY HOSPITAL",
-      location: "MUKUNDAPUR",
-      description: "Leading cardiac care center with expert cardiologists and state-of-the-art heart treatment facilities",
-      image: "",
-      rating: 4.9,
-      reviews: 1450,
-      price: "Starting from ₹45,000",
-      color: "from-green-500 to-emerald-500",
-      icon: HeartPulse
-    },
-    {
-      id: 5,
-      name: "RN TAGORE HOSPITAL",
-      category: "BEST NEUROSURGERY HOSPITAL",
-      location: "KOLKATA",
-      description: "Excellence in neurosurgery and neurological treatments with advanced surgical techniques",
-      image: "",
-      rating: 4.6,
-      reviews: 750,
-      price: "Starting from ₹60,000",
-      color: "from-purple-500 to-indigo-500",
-      icon: Brain
-    },
+const hospitals = [
+  {
+    id: 1,
+    name: "Top Cardiac Hospital",
+    hospitalName: "R N Tagore Hospital",
+    location: "KOLKATA",
+    description:
+      "Advanced cardiac care with expert heart specialists, bypass surgery, angioplasty, emergency cardiac services, and modern heart treatment facilities.",
+    image: "",
+    rating: 4.9,
+    reviews: 1450,
+    price: "Premium Cardiac Care",
+    category: "Cardiac Care",
+    color: "from-red-500 to-pink-500",
+    icon: HeartPulse,
+  },
+  {
+    id: 2,
+    name: "Top Orthopedic Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Specialized orthopedic treatments including joint replacement, spine surgery, sports injury care, and advanced bone care solutions.",
+    image: "",
+    rating: 4.8,
+    reviews: 980,
+    price: "Advanced Orthopedic Care",
+    category: "Orthopedic Care",
+    color: "from-blue-500 to-cyan-500",
+    icon: Bone,
+  },
+  {
+    id: 3,
+    name: "Ayurvedic Wellness Center",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Traditional Ayurvedic healing therapies, detox treatments, wellness programs, yoga, meditation, and holistic healthcare services.",
+    image: "",
+    rating: 4.7,
+    reviews: 870,
+    price: "Holistic Wellness Packages",
+    category: "Ayurvedic Wellness",
+    color: "from-green-500 to-emerald-500",
+    icon: Leaf,
+  },
 
-    {
-      id: 6,
-      name: "DESUN HOSPITAL",
-      category: "TOP MULTISPECIALITY HOSPITAL",
-      location: "EM Bypass",
-      description: "Comprehensive multi-specialty healthcare with 24/7 emergency services and advanced medical care",
-      image: "",
-      rating: 4.5,
-      reviews: 1100,
-      price: "Starting from ₹35,000",
-      color: "from-teal-500 to-cyan-500",
-      icon: Building
-    }
-  ];
+  {
+    id: 4,
+    name: "Top Cancer Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Comprehensive oncology care with chemotherapy, radiation therapy, cancer surgery, and world-class cancer treatment specialists.",
+    image: "",
+    rating: 4.9,
+    reviews: 1650,
+    price: "Comprehensive Cancer Care",
+    category: "Oncology",
+    color: "from-yellow-500 to-orange-500",
+    icon: Shield,
+  },
+
+  {
+    id: 5,
+    name: "Top Neuro Science Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Advanced neurological treatments for brain, spine, stroke, epilepsy, and neurosurgery using cutting-edge medical technology.",
+    image: "",
+    rating: 4.8,
+    reviews: 1200,
+    price: "Expert Neuro Care",
+    category: "Neuro Science",
+    color: "from-purple-500 to-indigo-500",
+    icon: Brain,
+  },
+
+  {
+    id: 6,
+    name: "Top Fertility Clinic",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Complete fertility treatments including IVF, IUI, reproductive care, pregnancy support, and family planning solutions.",
+    image: "",
+    rating: 4.7,
+    reviews: 760,
+    price: "Fertility & IVF Care",
+    category: "Fertility Clinic",
+    color: "from-pink-500 to-rose-500",
+    icon: Baby,
+  },
+
+  {
+    id: 7,
+    name: "Top Eye Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Specialized eye treatments including cataract surgery, LASIK, retina care, glaucoma treatment, and pediatric ophthalmology.",
+    image: "",
+    rating: 4.8,
+    reviews: 910,
+    price: "Advanced Eye Care",
+    category: "Eye Hospital",
+    color: "from-sky-500 to-blue-500",
+    icon: Eye,
+  },
+
+  {
+    id: 8,
+    name: "Top Liver | Gastronomy Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Expert liver care, gastroenterology treatments, digestive disease management, endoscopy, and advanced GI procedures.",
+    image: "",
+    rating: 4.7,
+    reviews: 830,
+    price: "Liver & Gastro Care",
+    category: "Gastronomy",
+    color: "from-orange-500 to-amber-500",
+    icon: Stethoscope,
+  },
+
+  {
+    id: 9,
+    name: "Top Skin | Dermatology Clinic",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Professional skin, hair, laser, cosmetic dermatology, acne treatment, anti-aging, and aesthetic care services.",
+    image: "",
+    rating: 4.6,
+    reviews: 690,
+    price: "Premium Skin Care",
+    category: "Dermatology",
+    color: "from-fuchsia-500 to-pink-500",
+    icon: Sparkles,
+  },
+
+  {
+    id: 10,
+    name: "Top Child | Neo Natal Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Comprehensive pediatric and neonatal healthcare with ICU support, child specialists, vaccination, and emergency care.",
+    image: "",
+    rating: 4.9,
+    reviews: 1120,
+    price: "Child & Neonatal Care",
+    category: "Child Care",
+    color: "from-cyan-500 to-teal-500",
+    icon: Baby,
+  },
+
+  {
+    id: 11,
+    name: "Top Multi-speciality Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Complete multi-specialty healthcare services with modern infrastructure, emergency care, diagnostics, and expert doctors.",
+    image: "",
+    rating: 4.8,
+    reviews: 2100,
+    price: "Multi-specialty Healthcare",
+    category: "Multi-speciality",
+    color: "from-indigo-500 to-blue-500",
+    icon: Building,
+  },
+
+  {
+    id: 12,
+    name: "Top Nephrology Hospital",
+    hospitalName: "Advertise your name here",
+    location: "KOLKATA",
+    description:
+      "Advanced kidney care, dialysis, nephrology treatments, kidney transplant support, and renal disease management.",
+    image: "",
+    rating: 4.7,
+    reviews: 870,
+    price: "Kidney & Renal Care",
+    category: "Nephrology",
+    color: "from-emerald-500 to-green-500",
+    icon: Activity,
+  },
+];
 
   return (
     <main className="text-gray-800">

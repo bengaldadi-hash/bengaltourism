@@ -564,165 +564,102 @@ export default function BrandsPage() {
     every special occasion.
   </p>
 </div>
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+  <div className="grid grid-cols-1 gap-8 items-stretch">
 
     {/* ================= TOP GOLD JEWELLERY SHOP ================= */}
-    <section className="flex ">
-      <div className="w-full">
+<section className="w-full">
+  <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-yellow-300">
 
-     
+    {/* ================= VIDEO ================= */}
+    <div className="relative bg-black">
 
-        {/* Card */}
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-yellow-400 h-full">
+      <video
+        controls
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover"
+        poster="/brand-home.png"
+      >
+        <source src="/add/add.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-          {/* Landscape Video */}
-          <div className="relative h-[500px]">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-              poster="/brand-home.png"
-            >
-              <source src="/add/add.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+    
+    </div>
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end">
-              <div className="p-6 w-full">
+    {/* ================= CONTENT BELOW VIDEO ================= */}
+    <div className="p-6 md:p-8">
 
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* Heading */}
+      <div className="mb-5">
+        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          Senco Gold & Diamonds
+        </h3>
 
-                  {/* Left Content */}
-                  <div className="text-white">
-                    <h3 className="text-2xl font-bold mb-2">
-                       Senco  Gold Jewellery
-                    </h3>
-
-                    <p className="text-white/90 mb-4">
-                      Visit our store in Kolkata for the finest collection
-                    </p>
-
-                    <div className="flex items-center gap-2 text-white/80">
-                      <MapPin className="w-5 h-5" />
-                      <span>KOLKATA</span>
-                    </div>
-                  </div>
-
-                  {/* Buttons */}
-                  <div className="flex flex-col gap-3 w-full sm:w-auto">
-
-                    <a
-                      href="https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20gold%20jewellery%20collection"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
-                    >
-                  
-
-                      WhatsApp Us
-                    </a>
-
-                    <button
-                      onClick={() => {
-                        setSelectedVideo("/add/add.mp4");
-                        setShowVideoModal(true);
-                      }}
-                      className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
-                    >
-                      View Details
-                    </button>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+        <p className="text-gray-600 text-lg leading-relaxed">
+          Discover premium gold, diamond & bridal jewellery collections
+          crafted with timeless elegance and modern luxury in Kolkata.
+        </p>
       </div>
-    </section>
 
-    {/* ================= TOP DIAMOND JEWELLERY STORE ================= */}
-    <section className="flex">
-      <div className="w-full">
+      {/* Location */}
+      <div className="flex items-center gap-2 text-gray-700 mb-6">
+        <MapPin className="w-5 h-5 text-yellow-600" />
 
-   
-
-        {/* Card */}
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-blue-400 h-full">
-
-          {/* Portrait Video */}
-          <div className="relative h-[500px] bg-black flex justify-center">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-full w-auto object-contain"
-              poster="/brand-home.png"
-            >
-              <source src="/add/add1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end">
-              <div className="p-6 w-full">
-
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-
-                  {/* Left Content */}
-                  <div className="text-white">
-                    <h3 className="text-2xl font-bold mb-2">
-                    Senco Diamond Collection
-                    </h3>
-
-                    <p className="text-white/90 mb-4">
-                      Premium diamonds and precious gemstones in Kolkata
-                    </p>
-
-                    <div className="flex items-center gap-2 text-white/80">
-                      <MapPin className="w-5 h-5" />
-                      <span>KOLKATA</span>
-                    </div>
-                  </div>
-
-                  {/* Buttons */}
-                  <div className="flex flex-col gap-3 w-full sm:w-auto">
-
-                    <a
-                      href="https://wa.me/919804333779?text=Hi%2C%20I'm%20interested%20in%20your%20diamond%20jewellery%20collection"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
-                    >
-                 
-
-                      WhatsApp Us
-                    </a>
-
-                    <button
-                      onClick={() => {
-                        setSelectedVideo("/add/add1.mp4");
-                        setShowVideoModal(true);
-                      }}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
-                    >
-                      View Details
-                    </button>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+        <span className="font-semibold">
+          Kolkata, West Bengal
+        </span>
       </div>
-    </section>
+
+      {/* Features */}
+      <div className="flex flex-wrap gap-3 mb-8">
+
+        <span className="bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium border border-yellow-200">
+          Gold Jewellery
+        </span>
+
+        <span className="bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-sm font-medium border border-orange-200">
+          Diamond Collection
+        </span>
+
+        <span className="bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-medium border border-amber-200">
+          Bridal Collection
+        </span>
+
+      </div>
+
+      {/* ================= BUTTONS ================= */}
+      <div className="flex flex-col sm:flex-row gap-4">
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/919804333779?text=Hi%20I%20am%20interested%20in%20your%20jewellery%20collection"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 text-center shadow-lg hover:scale-[1.02]"
+        >
+          WhatsApp Us
+        </a>
+
+        {/* View Details */}
+        <button
+          onClick={() => {
+            setSelectedVideo("/add/add.mp4");
+            setShowVideoModal(true);
+          }}
+          className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:scale-[1.02]"
+        >
+          View Details
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  
 
   </div>
 </div>
