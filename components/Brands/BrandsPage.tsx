@@ -598,37 +598,11 @@ export default function BrandsPage() {
           Senco Gold & Diamonds
         </h3>
 
-        <p className="text-gray-600 text-lg leading-relaxed">
-          Discover premium gold, diamond & bridal jewellery collections
-          crafted with timeless elegance and modern luxury in Kolkata.
-        </p>
+       
       </div>
 
-      {/* Location */}
-      <div className="flex items-center gap-2 text-gray-700 mb-6">
-        <MapPin className="w-5 h-5 text-yellow-600" />
+ 
 
-        <span className="font-semibold">
-          Kolkata, West Bengal
-        </span>
-      </div>
-
-      {/* Features */}
-      <div className="flex flex-wrap gap-3 mb-8">
-
-        <span className="bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium border border-yellow-200">
-          Gold Jewellery
-        </span>
-
-        <span className="bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-sm font-medium border border-orange-200">
-          Diamond Collection
-        </span>
-
-        <span className="bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-medium border border-amber-200">
-          Bridal Collection
-        </span>
-
-      </div>
 
       {/* ================= BUTTONS ================= */}
       <div className="flex flex-col sm:flex-row gap-4">
