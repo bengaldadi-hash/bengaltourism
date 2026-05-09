@@ -551,6 +551,19 @@ export default function BrandsPage() {
       </section>
 <section className="bg-white px-4 py-16">
    <div className="max-w-7xl mx-auto bg-white px-4 py-16">
+    <div className="text-center mb-12">
+  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-700 bg-clip-text text-transparent">
+      Top Gold & Diamond Jewellery Brand
+    </span>
+  </h2>
+
+  <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+    Explore our exclusive collection of premium gold, diamond & luxury jewellery
+    crafted with timeless elegance, modern artistry, and unmatched purity for
+    every special occasion.
+  </p>
+</div>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
     {/* ================= TOP GOLD JEWELLERY SHOP ================= */}
