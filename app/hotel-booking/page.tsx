@@ -46,10 +46,7 @@ export default function HotelBookingPage() {
     "Zamindar Palace",
     "Dreamland",
     "Sterling",
-  ];
-
-  const vipRoadHotels = [
-    "Golden Palace",
+      "Golden Palace",
     "Nayak Beach",
     "Sandy Villa",
     "Tohshali Sands",
@@ -60,6 +57,8 @@ export default function HotelBookingPage() {
     "Mayfair Waves",
     "Holiday Inn",
   ];
+
+
   const hillHotels = [
     "Apple Orchard",
     "Anola",
@@ -412,7 +411,7 @@ export default function HotelBookingPage() {
                 {hotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -459,18 +458,14 @@ export default function HotelBookingPage() {
 
             <div className="">
 
-              {/* Heading */}
-              <h3 className="text-2xl font-bold text-green-700 mb-5">
-                Jungle Resorts & Forest Stays
-              </h3>
-
+          
               {/* Resorts */}
               <div className="flex flex-wrap gap-3">
 
                 {jungleResorts.map((resort, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${resort}`}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -519,10 +514,6 @@ export default function HotelBookingPage() {
 
             <div className="">
 
-              {/* Heading */}
-              <h3 className="text-2xl font-bold text-emerald-700 mb-5">
-                Sundarban Hotels & Resorts
-              </h3>
 
               {/* Hotel Tags */}
               <div className="flex flex-wrap gap-3">
@@ -530,7 +521,7 @@ export default function HotelBookingPage() {
                 {sundarbanHotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -584,31 +575,20 @@ export default function HotelBookingPage() {
 
 
             <div className="space-y-8">
+  <div className="">
 
-              {/* ================= BEACH FRONT HOTELS ================= */}
-              <div className="">
+  
 
-                {/* Header */}
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-orange-700">
-                    Beach Front Hotels
-                  </h3>
+    {/* Hotels */}
+    <div className="flex flex-wrap gap-3">
 
-                  <span className="bg-orange-100 text-orange-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
-                    Sea Facing Stay
-                  </span>
-                </div>
-
-                {/* Hotels */}
-                <div className="flex flex-wrap gap-3">
-
-                  {puriHotels.map((hotel, index) => (
-                    <a
-                      key={index}
-                      href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="
+      {puriHotels.map((hotel, index) => (
+        <a
+          key={index}
+          href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
             px-5 py-2.5
             rounded-full
             bg-orange-50
@@ -623,67 +603,19 @@ export default function HotelBookingPage() {
             hover:shadow-xl
             hover:-translate-y-1
           "
-                    >
-                      {hotel}
-                    </a>
-                  ))}
+        >
+          {hotel}
+        </a>
+      ))}
 
-                  <div className="px-5 py-2.5 rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200 text-sm font-semibold">
-                    & Similar Properties
-                  </div>
+      <div className="px-5 py-2.5 rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200 text-sm font-semibold">
+        & Similar Properties
+      </div>
 
-                </div>
-              </div>
+    </div>
+  </div>
+        
 
-              {/* ================= VIP ROAD HOTELS ================= */}
-              <div className="">
-
-                {/* Header */}
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-blue-700">
-                    VIP Road Hotels
-                  </h3>
-
-                  <span className="bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
-                    Premium Roadside Stay
-                  </span>
-                </div>
-
-                {/* Hotels */}
-                <div className="flex flex-wrap gap-3">
-
-                  {vipRoadHotels.map((hotel, index) => (
-                    <a
-                      key={index}
-                      href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="
-            px-5 py-2.5
-            rounded-full
-            bg-blue-50
-            text-blue-800
-            border border-blue-200
-            text-sm font-medium
-            transition-all duration-300
-            hover:bg-gradient-to-r
-            hover:from-blue-500
-            hover:to-cyan-500
-            hover:text-white
-            hover:shadow-xl
-            hover:-translate-y-1
-          "
-                    >
-                      {hotel}
-                    </a>
-                  ))}
-
-                  <div className="px-5 py-2.5 rounded-full bg-cyan-100 text-cyan-700 border border-cyan-200 text-sm font-semibold">
-                    & Similar Properties
-                  </div>
-
-                </div>
-              </div>
 
             </div>
           </section>
@@ -708,16 +640,6 @@ export default function HotelBookingPage() {
 
             <div className="">
 
-              {/* Title */}
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-sky-700">
-                  Beach Hotels & Resorts
-                </h3>
-
-                <span className="bg-sky-100 text-sky-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
-                  Sea Side Stay
-                </span>
-              </div>
 
               {/* Hotels */}
               <div className="flex flex-wrap gap-3">
@@ -725,7 +647,7 @@ export default function HotelBookingPage() {
                 {beachResorts.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -784,16 +706,6 @@ export default function HotelBookingPage() {
 
             <div className="">
 
-              {/* Header */}
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-purple-700">
-                  Hill Hotels & Mountain Resorts
-                </h3>
-
-                <span className="bg-purple-100 text-purple-700 text-xs md:text-sm font-semibold px-4 py-2 rounded-full">
-                  Mountain Stay
-                </span>
-              </div>
 
               {/* Hotels */}
               <div className="flex flex-wrap gap-3">
@@ -801,7 +713,7 @@ export default function HotelBookingPage() {
                 {hillHotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20${hotel}`}
+                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="

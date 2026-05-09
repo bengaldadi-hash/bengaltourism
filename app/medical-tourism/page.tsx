@@ -507,10 +507,10 @@ const hospitals = [
             {hospitals.map((hospital, index) => (
               <div key={hospital.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
                 {/* Image */}
-                   <div className="mb-4">
+                   <div className="bg-white p-4 ">
                     <h3 className="text-xl font-bold text-gray-900">{hospital.name}</h3>
                   </div>
-                <div className="relative h-56 flex items-center justify-center bg-gray-50">
+                <div className="relative h-56 flex items-center justify-center bg-gray-50 ">
                   {hospital.image ? (
                     <Image
                       src={hospital.image}
@@ -550,7 +550,7 @@ const hospitals = [
                 <div className="p-5 flex flex-col flex-grow">
                   {/* Badge */}
                   <div className="flex items-center gap-2 mb-3">
-                    <hospital.icon className={`w-4 h-4 text-white`} />
+                    <hospital.icon className={`w-4 h-4 text-black`} />
                     <span className="text-xs font-medium text-gray-600">{hospital.category}</span>
                   </div>
 
@@ -559,7 +559,7 @@ const hospitals = [
                     <h3 className="text-xl font-bold text-gray-900">{hospital.hospitalName}</h3>
                   </div>
 
-                  {/* Rating */}
+{/*                 
                   <div className="flex items-center gap-3 mb-3">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
@@ -570,10 +570,10 @@ const hospitals = [
                     <span className="text-xs text-gray-500">({hospital.reviews} reviews)</span>
                   </div>
 
-                  {/* Description */}
+                  
                   <p className="text-gray-600 text-sm mb-4 flex-grow">
                     {hospital.description}
-                  </p>
+                  </p>  */}
 
             
 
