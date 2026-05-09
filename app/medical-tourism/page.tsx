@@ -504,89 +504,151 @@ const hospitals = [
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {hospitals.map((hospital, index) => (
-              <div key={hospital.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
-                {/* Image */}
-                   <div className="bg-white p-4 ">
-                    <h3 className="text-xl font-bold text-gray-900">{hospital.name}</h3>
-                  </div>
-                <div className="relative h-56 flex items-center justify-center bg-gray-50 ">
-                  {hospital.image ? (
-                    <Image
-                      src={hospital.image}
-                      alt={hospital.name}
-                      fill
-                      className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-100 p-4">
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <Eye className="w-6 h-6 text-white" />
-                        </div>
-                        <h4 className="text-sm font-bold text-yellow-800 mb-1">Advertise Your Hospital Here</h4>
-                        <p className="text-xs text-yellow-600">Showcase your medical facility to thousands</p>
-                      </div>
-                    </div>
-                  )}
+           {hospitals.map((hospital) => (
+  <div
+    key={hospital.id}
+    className="
+      group
+      bg-white
+      rounded-3xl
+      overflow-hidden
+      border border-gray-200
+      shadow-sm
+      hover:shadow-2xl
+      transition-all duration-500
+      hover:-translate-y-2
+      flex flex-col
+    "
+  >
 
-                  {/* Overlay */}
-                  {hospital.image && (
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                  )}
+    {/* ================= TOP CONTENT ================= */}
+    <div className="p-5 pb-3">
 
-                  {/* Location */}
-                  <div className="absolute bottom-3 left-3">
-                    <div className="flex items-center bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                      <MapPin className="w-4 h-4 mr-1 text-yellow-600" />
-                      <span className="text-xs font-semibold text-gray-800">
-                        {hospital.location}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+  
+  
 
-                {/* Content */}
-                <div className="p-5 flex flex-col flex-grow">
-                  {/* Badge */}
-                  <div className="flex items-center gap-2 mb-3">
-                    <hospital.icon className={`w-4 h-4 text-black`} />
-                    <span className="text-xs font-medium text-gray-600">{hospital.category}</span>
-                  </div>
+      {/* Hospital Name */}
+      <h3 className="
+        text-lg md:text-xl
+        font-bold
+        text-gray-900
+        leading-snug
+        group-hover:text-blue-600
+        transition
+      ">
+        {hospital.name}
+      </h3>
 
-                  {/* Title */}
-                  <div className="mb-4">
-                    <h3 className="text-xl font-bold text-gray-900">{hospital.hospitalName}</h3>
-                  </div>
+    </div>
 
-{/*                 
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
-                      ))}
-                    </div>
-                    <span className="text-sm text-gray-600">{hospital.rating}</span>
-                    <span className="text-xs text-gray-500">({hospital.reviews} reviews)</span>
-                  </div>
+    {/* ================= IMAGE ================= */}
+    <div className="
+      relative
+      h-60
+      bg-gradient-to-br
+      from-blue-50
+      to-cyan-50
+      flex
+      items-center
+      justify-center
+      overflow-hidden
+    ">
 
-                  
-                  <p className="text-gray-600 text-sm mb-4 flex-grow">
-                    {hospital.description}
-                  </p>  */}
+      {hospital.image ? (
+        <Image
+          src={hospital.image}
+          alt={hospital.name}
+          fill
+          className="
+            object-contain
+            p-6
+            transition-transform
+            duration-500
+            group-hover:scale-105
+          "
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center text-center px-4">
 
-            
+          {/* Placeholder */}
+          <div className="
+            w-20 h-20
+            rounded-full
+            bg-blue-500
+            flex
+            items-center
+            justify-center
+            shadow-lg
+            mb-4
+          ">
+            <hospital.icon className="w-10 h-10 text-white" />
+          </div>
 
-                  {/* Button */}
-                  <button
-                    onClick={() => handleHospitalClick(hospital)}
-                    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
-                  >
-                    Enquire Now
-                  </button>
-                </div>
-              </div>
-            ))}
+          <h4 className="text-lg font-bold text-blue-700">
+            {hospital.hospitalName}
+          </h4>
+
+          <p className="text-sm text-gray-500 mt-2">
+            Hospital Logo / Video
+          </p>
+
+        </div>
+      )}
+
+     
+    </div>
+
+    {/* ================= BOTTOM CONTENT ================= */}
+    <div className="p-5 flex flex-col flex-grow">
+    <div className="mb-3">
+        <span className="
+          inline-flex
+          items-center
+          bg-blue-100
+          text-blue-800
+          text-[11px]
+          font-semibold
+          px-3 py-1
+          rounded-full
+          uppercase
+          tracking-wide
+        ">
+          {hospital.category}
+        </span>
+      </div>
+      {/* Hospital Advertiser */}
+      <div className="mb-5">
+
+        <p className="text-sm text-gray-500 font-medium">
+          {hospital.hospitalName}
+        </p>
+
+      </div>
+
+      {/* Button */}
+      <button
+        onClick={() => handleHospitalClick(hospital)}
+        className="
+          w-full
+          bg-gradient-to-r
+          from-blue-600
+          to-cyan-600
+          hover:from-blue-700
+          hover:to-cyan-700
+          text-white
+          font-semibold
+          py-3
+          rounded-2xl
+          transition-all duration-300
+          hover:shadow-xl
+        "
+      >
+        Enquire Now
+      </button>
+
+    </div>
+  </div>
+))}
           </div>
         </div>
       </section>
