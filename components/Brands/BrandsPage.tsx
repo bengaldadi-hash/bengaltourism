@@ -288,7 +288,7 @@ export default function BrandsPage() {
 
                   {/* Heading */}
                   <div className="mb-5">
-                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
                       Senco Gold & Diamonds
                     </h3>
 
