@@ -411,7 +411,7 @@ export default function HotelBookingPage() {
                 {hotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+                    href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -465,7 +465,7 @@ export default function HotelBookingPage() {
                 {jungleResorts.map((resort, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+                    href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -521,7 +521,7 @@ export default function HotelBookingPage() {
                 {sundarbanHotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+                    href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -585,7 +585,7 @@ export default function HotelBookingPage() {
       {puriHotels.map((hotel, index) => (
         <a
           key={index}
-          href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+          href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
           target="_blank"
           rel="noopener noreferrer"
           className="
@@ -647,7 +647,7 @@ export default function HotelBookingPage() {
                 {beachResorts.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+                    href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -713,7 +713,7 @@ export default function HotelBookingPage() {
                 {hillHotels.map((hotel, index) => (
                   <a
                     key={index}
-                    href={`https://wa.me/919804333779?text=Hi%20I%20want%20to%20book%20hotel`}
+                    href={`https://wa.me/917890727339?text=Hi%20I%20want%20to%20book%20hotel`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
