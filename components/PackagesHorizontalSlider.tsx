@@ -32,6 +32,34 @@ const packages = [
         image:
             "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
     },
+     {
+        title: "Medical Tourism",
+        subtitle: "Healthcare Journey",
+        href: "/medical-tourism",
+        image:
+            "https://images.unsplash.com/photo-1745420052490-285dbfa1cf4d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNhbCUyMHRvdXJpc218ZW58MHx8MHx8fDA%3D",
+    },
+    {
+        title: "Air Ambulance Service",
+        subtitle: "Emergency Medical Transport",
+        href: "/air-ambulance",
+        image:
+            "https://images.unsplash.com/photo-1696243144343-56a235858dce?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEFpciUyMEFtYnVsYW5jZSUyMFNlcnZpY2V8ZW58MHx8MHx8fDA%3D",
+    },
+    {
+        title: "Tea Tourism",
+        subtitle: "Experience Tea Plantations",
+        href: "/tea-tourism",
+        image:
+            "https://images.unsplash.com/photo-1723214520491-7f90eeda2cdd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVhJTIwVG91cmlzbSUyMnxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+        title: "Premium hotels",
+        subtitle: "Luxury Accommodations",
+        href: "/hotel-resort",
+        image:
+            "https://images.unsplash.com/photo-1761470371217-a4de0ff0e8df?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SG90ZWwtUmVzb3J0LUd1ZXN0JTIwSG91c2V8ZW58MHx8MHx8fDA%3D",
+    },
 ];
 
 
