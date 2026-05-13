@@ -173,7 +173,7 @@ export default function Navbar() {
                         </Link>
 
                         {/* Desktop Nav */}
-                        <nav className="hidden lg:flex items-center gap-6">
+                        <nav className="hidden lg:flex items-center gap-4">
                             <Link href="/" className="text-amber-700 font-semibold hover:text-yellow-600 transition">
                                 HOME
                             </Link>
@@ -228,18 +228,18 @@ export default function Navbar() {
                                         >
                                             Exclusive Offers
                                         </Link>
-                                   
-                                   
+
+
                                     </div>
                                 )}
                             </div>
-                                 <Link
-                                            href="/medical-tourism"
-                                           className="text-gray-700 font-semibold hover:text-yellow-600 transition">
-                                            Medical Tourism
-                                        </Link>
-                            <Link href="/earn" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
-                                Earn With Us
+                            <Link
+                                href="/medical-tourism"
+                                className="text-gray-700 font-semibold hover:text-yellow-600 transition">
+                                Medical Tourism
+                            </Link>
+                            <Link href="/air-ambulance" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
+                                Air Ambulance
                             </Link>
                             {/* <Link href="/career" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 Career
@@ -283,6 +283,13 @@ export default function Navbar() {
                             onClick={() => setMobileOpen(false)}
                         >
                             HOME
+                        </Link>
+                            <Link
+                            href="/about"
+                            className="block py-2 text-gray-700 font-semibold"
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            About Us
                         </Link>
 
                         {/* Mobile Destinations */}
@@ -338,13 +345,11 @@ export default function Navbar() {
                             onClick={() => setMobileOpen(false)}>
                             Medical Tourism
                         </Link>
-                        <Link
-                            href="/about"
-                            className="block py-2 text-gray-700 font-semibold"
-                            onClick={() => setMobileOpen(false)}
-                        >
-                            About Us
+                        <Link href="/air-ambulance" className="block py-2 text-gray-700 font-semibold"
+                            onClick={() => setMobileOpen(false)}>
+                            Air Ambulance
                         </Link>
+                    
                         <Link
                             href="/earn"
                             className="block py-2 text-gray-700 font-semibold"
