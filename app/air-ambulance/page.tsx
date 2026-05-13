@@ -60,6 +60,93 @@ export default function AirAmbulancePage() {
         </div>
       </section>
 
+      {/* ================= FEATURED IMAGE SECTION ================= */}
+<section className="relative py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 overflow-hidden">
+  {/* Background Effects */}
+  <div className="absolute top-0 left-0 w-72 h-72 bg-orange-300/20 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 right-0 w-72 h-72 bg-yellow-300/20 rounded-full blur-3xl"></div>
+
+  <div className="relative max-w-7xl mx-auto px-6">
+    
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      
+      {/* LEFT CONTENT */}
+      <div>
+        <span className="inline-block px-5 py-2 mb-5 text-sm font-semibold tracking-wide text-orange-700 uppercase bg-orange-100 rounded-full shadow-sm">
+          Emergency Medical Service
+        </span>
+
+        <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+          Top & Only{" "}
+          <span className="text-orange-600">
+            Air Ambulance
+          </span>{" "}
+          Service
+        </h2>
+
+        <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          Fast, reliable, and life-saving air ambulance services available 24/7
+          with advanced ICU-equipped aircraft and expert medical staff for
+          emergency patient transportation.
+        </p>
+
+        {/* Features */}
+        <div className="mt-8 space-y-4">
+          <div className="flex items-center gap-3">
+            <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+            <p className="text-gray-700 font-medium">
+              24/7 Emergency Availability
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+            <p className="text-gray-700 font-medium">
+              ICU Equipped Aircraft
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+            <p className="text-gray-700 font-medium">
+              Expert Medical Team
+            </p>
+          </div>
+        </div>
+
+        {/* Buttons */}
+        <div className="mt-10 flex flex-wrap gap-4">
+          <button className="px-7 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg transition duration-300">
+            Book Now
+          </button>
+
+          <button className="px-7 py-3 border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white font-semibold rounded-full transition duration-300">
+            Learn More
+          </button>
+        </div>
+
+        {/* Brand */}
+        <div className="mt-10">
+          <p className="text-2xl font-bold text-orange-600 tracking-wide">
+            Bengal Tourism
+          </p>
+        </div>
+      </div>
+
+      {/* RIGHT IMAGE */}
+      <div className="relative">
+        <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/30 bg-white">
+          <img
+            src="/air.jpeg"
+            alt="Air Ambulance Service"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ================= AIRCRAFT CHARTER SERVICES ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
