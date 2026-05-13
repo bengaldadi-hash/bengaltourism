@@ -236,7 +236,7 @@ export default function Navbar() {
                                  <Link
                                             href="/medical-tourism"
                                            className="text-gray-700 font-semibold hover:text-yellow-600 transition">
-                                            Medical Tourism"
+                                            Medical Tourism
                                         </Link>
                             <Link href="/earn" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 Earn With Us
@@ -336,7 +336,7 @@ export default function Navbar() {
                             href="/medical-tourism"
                             className="block py-2 text-gray-700 font-semibold"
                             onClick={() => setMobileOpen(false)}>
-                            Medical Tourism"
+                            Medical Tourism
                         </Link>
                         <Link
                             href="/about"
