@@ -71,7 +71,7 @@ const hospitals = [
     location: "KOLKATA",
     description:
       "Advanced cardiac care with expert heart specialists, bypass surgery, angioplasty, emergency cardiac services, and modern heart treatment facilities.",
-    image: "",
+    image: "/NH.jpg",
     rating: 4.9,
     reviews: 1450,
     price: "Premium Cardiac Care",

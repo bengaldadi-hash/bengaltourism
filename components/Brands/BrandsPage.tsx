@@ -7,12 +7,12 @@ import { Star, MapPin, X } from "lucide-react";
 const brands = [
   {
     id: 1,
-    name: "Top Mithai Brand",
-    brandName: "Advertise your name here",
+    name: "Top Gold jewellery Brand",
+    brandName: "Senco Gold & Diamonds",
     location: "KOLKATA",
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
-    image: "",
+    image: "/SEN.png",
     category: "food",
     action: "View Details",
   },
