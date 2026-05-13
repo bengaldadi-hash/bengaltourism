@@ -228,33 +228,16 @@ export default function Navbar() {
                                         >
                                             Exclusive Offers
                                         </Link>
-                                        <Link
-                                            href="/medical-tourism"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
-                                        >
-                                           Medical Tourism"
-                                        </Link>   
-                                        <Link
-                                            href="/air-ambulance"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
-                                        >
-                                          Air Ambulance Service
-                                        </Link>   
-                                        <Link
-                                            href="/tea-tourism"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
-                                        >
-                                            Tea Tourism
-                                        </Link>   
-                                        <Link
-                                            href="/hotel-resort"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
-                                        >
-                                           Premium hotels
-                                        </Link> 
+                                   
+                                   
                                     </div>
                                 )}
                             </div>
+                                 <Link
+                                            href="/medical-tourism"
+                                           className="text-gray-700 font-semibold hover:text-yellow-600 transition">
+                                            Medical Tourism"
+                                        </Link>
                             <Link href="/earn" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 Earn With Us
                             </Link>
@@ -344,34 +327,17 @@ export default function Navbar() {
                                     >
                                         Exclusive Offers
                                     </Link>
-                                    <Link
-                                            href="/medical-tourism"
-                                       className="block py-2 text-gray-600 hover:text-yellow-600"
-                                        onClick={() => setMobileOpen(false)}>
-                                           Medical Tourism"
-                                        </Link>   
-                                        <Link
-                                            href="/air-ambulance"
-                                        className="block py-2 text-gray-600 hover:text-yellow-600"
-                                        onClick={() => setMobileOpen(false)} >
-                                          Air Ambulance Service
-                                        </Link>   
-                                        <Link
-                                            href="/tea-tourism"
-                                        className="block py-2 text-gray-600 hover:text-yellow-600"
-                                        onClick={() => setMobileOpen(false)} >
-                                            Tea Tourism
-                                        </Link>   
-                                        <Link
-                                            href="/hotel-resort"
-                                         className="block py-2 text-gray-600 hover:text-yellow-600"
-                                        onClick={() => setMobileOpen(false)}>
-                                           Premium hotels
-                                        </Link> 
+
+
                                 </div>
                             )}
                         </div>
-
+                        <Link
+                            href="/medical-tourism"
+                            className="block py-2 text-gray-700 font-semibold"
+                            onClick={() => setMobileOpen(false)}>
+                            Medical Tourism"
+                        </Link>
                         <Link
                             href="/about"
                             className="block py-2 text-gray-700 font-semibold"
