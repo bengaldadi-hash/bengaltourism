@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50">
-           
+
 
             {/* Tour Packages Sidebar */}
             {tourSidebarOpen && (
@@ -123,12 +123,12 @@ export default function Navbar() {
                                         <li><a href="/spa-wellness" className="text-gray-700 hover:text-yellow-600 block py-1">Wellness Tourism -Spa-Massage-Yoga</a></li>
                                         <li><a href="/tea-tourism" className="text-gray-700 hover:text-yellow-600 block py-1">Tea Tourism</a></li>
                                         <li><a href="/hotel-booking" className="text-gray-700 hover:text-yellow-600 block py-1">Hotel-Resort-Guest House</a></li>
-                                    </ul>       
+                                    </ul>
                                 </div>
 
                                 {/* FOREIGN TOURS */}
                                 <div>
-                                    <h3 className="font-bold text-yellow-600 mb-3">FOREIGN TOURS</h3>  
+                                    <h3 className="font-bold text-yellow-600 mb-3">FOREIGN TOURS</h3>
                                     <ul className="space-y-2">
                                         <li><a href="/bhutan" className="text-gray-700 hover:text-yellow-600 block py-1">Bhutan - Thimpu & Paro</a></li>
                                         <li><a href="/dubai" className="text-gray-700 hover:text-yellow-600 block py-1">Dubai</a></li>
@@ -149,7 +149,7 @@ export default function Navbar() {
 
             {/* Main Navigation */}
             <div className="bg-white border-b">
-                <div className="max-w-7xl mx-auto px-4"> 
+                <div className="max-w-7xl mx-auto px-4">
                     <div className="flex h-20 items-center justify-between">
 
                         {/* Tour Packages Hamburger - Top Left */}
@@ -177,14 +177,14 @@ export default function Navbar() {
                             <Link href="/" className="text-amber-700 font-semibold hover:text-yellow-600 transition">
                                 HOME
                             </Link>
-                   
-                            
+
+
                             <Link href="/about" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 About Us
                             </Link>
-                                     
+
                             {/* Destinations Dropdown */}
-                            <div 
+                            <div
                                 className="relative"
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -197,9 +197,9 @@ export default function Navbar() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </button>
-                                
+
                                 {destinationsOpen && (
-                                    <div 
+                                    <div
                                         className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg border border-gray-200 z-50"
                                         onMouseEnter={handleMouseEnter}
                                         onMouseLeave={handleMouseLeave}
@@ -228,6 +228,30 @@ export default function Navbar() {
                                         >
                                             Exclusive Offers
                                         </Link>
+                                        <Link
+                                            href="/medical-tourism"
+                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
+                                        >
+                                           Medical Tourism"
+                                        </Link>   
+                                        <Link
+                                            href="/air-ambulance"
+                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
+                                        >
+                                          Air Ambulance Service
+                                        </Link>   
+                                        <Link
+                                            href="/tea-tourism"
+                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
+                                        >
+                                            Tea Tourism
+                                        </Link>   
+                                        <Link
+                                            href="/hotel-resort"
+                                            className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition"
+                                        >
+                                           Premium hotels
+                                        </Link> 
                                     </div>
                                 )}
                             </div>
@@ -243,15 +267,15 @@ export default function Navbar() {
                             <Link href="/brands" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 Brands
                             </Link>
-                          
+
                             <Link href="/contact" className="text-gray-700 font-semibold hover:text-yellow-600 transition">
                                 Contact Us
                             </Link>
-                              <Link
+                            <Link
                                 href="/hotel-booking"
                                 className="bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-yellow-700 transition"
                             >
-                               Hotal Booking
+                                Hotal Booking
                             </Link>
                         </nav>
 
@@ -277,7 +301,7 @@ export default function Navbar() {
                         >
                             HOME
                         </Link>
-                        
+
                         {/* Mobile Destinations */}
                         <div>
                             <button
@@ -289,7 +313,7 @@ export default function Navbar() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            
+
                             {destinationsOpen && (
                                 <div className="pl-4 mt-2 space-y-2">
                                     <Link
@@ -320,10 +344,34 @@ export default function Navbar() {
                                     >
                                         Exclusive Offers
                                     </Link>
+                                    <Link
+                                            href="/medical-tourism"
+                                       className="block py-2 text-gray-600 hover:text-yellow-600"
+                                        onClick={() => setMobileOpen(false)}>
+                                           Medical Tourism"
+                                        </Link>   
+                                        <Link
+                                            href="/air-ambulance"
+                                        className="block py-2 text-gray-600 hover:text-yellow-600"
+                                        onClick={() => setMobileOpen(false)} >
+                                          Air Ambulance Service
+                                        </Link>   
+                                        <Link
+                                            href="/tea-tourism"
+                                        className="block py-2 text-gray-600 hover:text-yellow-600"
+                                        onClick={() => setMobileOpen(false)} >
+                                            Tea Tourism
+                                        </Link>   
+                                        <Link
+                                            href="/hotel-resort"
+                                         className="block py-2 text-gray-600 hover:text-yellow-600"
+                                        onClick={() => setMobileOpen(false)}>
+                                           Premium hotels
+                                        </Link> 
                                 </div>
                             )}
                         </div>
-                        
+
                         <Link
                             href="/about"
                             className="block py-2 text-gray-700 font-semibold"
@@ -359,7 +407,7 @@ export default function Navbar() {
                         >
                             Brands
                         </Link>
-                   
+
                         <Link
                             href="/contact"
                             className="block py-2 text-gray-700 font-semibold"
@@ -367,7 +415,7 @@ export default function Navbar() {
                         >
                             Contact Us
                         </Link>
-                             <Link
+                        <Link
                             href="/hotel-booking"
                             className="block py-2 bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold text-center"
                             onClick={() => setMobileOpen(false)}
