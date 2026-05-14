@@ -10,19 +10,19 @@ const cards = [
     id: 1,
     title: "Srirodhara",
     video: "/wellness/Shirodara.mp4",
-    desc: "Srirodhara is a traditional Ayurvedic treatment where warm medicated oil is poured in a continuous stream over the forehead. It helps in reducing stress, anxiety, and promoting relaxation.",
+    desc: "Advertise your Name here",
   },
   {
     id: 2,
     title: "oil massage",
     video: "/wellness/ASMR.mp4",
-    desc: "Oil massage is a traditional Ayurvedic treatment that involves the application of warm medicated oil to the body. It helps in reducing stress, anxiety, and promoting relaxation.",
+    desc: "Advertise your Name here",
   },
   {
     id: 3,
     title: "Abhayanga",
     video: "/wellness/Abhayanga.mp4",
-    desc: "Abhayanga is a traditional Ayurvedic treatment that involves the application of warm medicated oil to the body. It helps in reducing stress, anxiety, and promoting relaxation.",
+    desc: "Advertise your Name here",
   },
   {
     id: 4,
@@ -152,7 +152,7 @@ export default function SpaWellnessPage() {
                   </div>
 
                   {/* Bottom */}
-                  <div className="py-4 text-center text-lg font-medium text-gray-700 ">
+                  <div className="py-4 text-center  text-lg font-semibold text-gray-700 ">
                     {card.desc}
                   </div>
                 </div>
