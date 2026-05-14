@@ -152,7 +152,7 @@ export default function SpaWellnessPage() {
                   </div>
 
                   {/* Bottom */}
-                  <div className="py-4 text-center text-lg font-medium text-gray-700 border-t">
+                  <div className="py-4 text-center text-lg font-medium text-gray-700 ">
                     {card.desc}
                   </div>
                 </div>
