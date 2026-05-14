@@ -14,7 +14,7 @@ const cards = [
   },
   {
     id: 2,
-    title: "oil massage",
+    title: "Oil massage",
     video: "/wellness/ASMR.mp4",
     desc: "Advertise your Name here",
   },
