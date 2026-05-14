@@ -1,11 +1,50 @@
 "use client"
 
 import Image from 'next/image'
+import { useState } from "react";
 import { MapPin, Calendar, Users, Star, Clock, Camera, Sun, Home, IndianRupee, Award, Compass, Utensils, Building, Trees, Ship, Sparkles, Train, ShoppingBag, Book, Mountain, Waves, Fish, Bird, Tent, Flame, PartyPopper, Heart, Sprout } from 'lucide-react'
 import ContactCTA from '@/components/ContactCTA'
 import PackagePricing from '@/components/PackagePricing'
-
+const cards = [
+  {
+    id: 1,
+    title: "Srirodhara",
+    video: "/wellness/Shirodara.mp4",
+    desc: "Srirodhara is a traditional Ayurvedic treatment where warm medicated oil is poured in a continuous stream over the forehead. It helps in reducing stress, anxiety, and promoting relaxation.",
+  },
+  {
+    id: 2,
+    title: "oil massage",
+    video: "/wellness/ASMR.mp4",
+    desc: "Oil massage is a traditional Ayurvedic treatment that involves the application of warm medicated oil to the body. It helps in reducing stress, anxiety, and promoting relaxation.",
+  },
+  {
+    id: 3,
+    title: "Abhayanga",
+    video: "/wellness/Abhayanga.mp4",
+    desc: "Abhayanga is a traditional Ayurvedic treatment that involves the application of warm medicated oil to the body. It helps in reducing stress, anxiety, and promoting relaxation.",
+  },
+  {
+    id: 4,
+    title: "Top Ayurvedic Wellness Center",
+    video: "",
+    desc: "Advertise your Name here",
+  },
+  {
+    id: 5,
+    title: "Top Ayurvedic Wellness Center",
+    video: "",
+    desc: "Advertise your Name here",
+  },
+  {
+    id: 6,
+    title: "Top Ayurvedic Wellness Center",
+    video: "",
+    desc: "Advertise your Name here",
+  },
+];
 export default function SpaWellnessPage() {
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   return (
     <main className="text-gray-800">
 
@@ -26,7 +65,7 @@ export default function SpaWellnessPage() {
               <Heart className="w-6 h-6 text-yellow-400" />
               <span className="text-yellow-400 font-semibold tracking-wide">Spa & Wellness</span>
             </div>
-            
+
             <h1 className="text-5xl text-center md:text-7xl font-bold mb-6 leading-tight">
               Wellness & Rejuvenation
               <span className="block text-3xl md:text-5xl mt-2 text-purple-300">
@@ -35,7 +74,7 @@ export default function SpaWellnessPage() {
             </h1>
 
             <p className="text-xl text-center md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Experience ultimate wellness and rejuvenation with ancient Ayurvedic wisdom, 
+              Experience ultimate wellness and rejuvenation with ancient Ayurvedic wisdom,
               yoga, meditation, and spa therapies in the Himalayan foothills
             </p>
 
@@ -71,87 +110,82 @@ export default function SpaWellnessPage() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
             <div className="lg:col-span-2 space-y-8">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Panchakarma */}
-            <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center">
-                <Sprout className="w-16 h-16 text-white group-hover:scale-110 transition" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">Panchakarma</h3>
-                <p className="text-gray-700 mb-4">
-                  Traditional detoxification and purification therapies using natural herbs 
-                  and oils. Experience the ancient wisdom of Ayurvedic healing.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-green-600 font-semibold">Ancient Healing</span>
-                  <a href="/book-tour" className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition">
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
+              <div className="grid md:grid-cols-2 gap-8">
+               {cards.map((card) => (
+                <div
+                  key={card.id}
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                >
+                  {/* Top */}
+                  <div className="bg-green-600 text-white text-center py-4 text-xl font-bold">
+                    {card.title}
+                  </div>
 
-            {/* Shirodhara */}
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                <Waves className="w-16 h-16 text-white group-hover:scale-110 transition" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">Shirodhara</h3>
-                <p className="text-gray-700 mb-4">
-                  Oil massage therapies with herbal medicated oils for deep relaxation 
-                  and muscle rejuvenation. Experience the healing power of touch.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-blue-600 font-semibold">Deep Relaxation</span>
-                  <a href="/book-tour" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
+                  {/* Middle */}
+                  <div
+                    className="h-64 bg-green-100 relative cursor-pointer overflow-hidden"
+                    onClick={() => card.video && setSelectedVideo(card.video)}
+                  >
+                    {card.video ? (
+                      <>
+                        {/* Direct Video Preview */}
+                        <video
+                          src={card.video}
+                          muted
+                          autoPlay
+                          loop
+                          className="w-full h-full object-cover"
+                        />
 
-            {/* Abhyanga */}
-            <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-              <div className="h-48 bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center">
-                <Flame className="w-16 h-16 text-white group-hover:scale-110 transition" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">Abhyanga</h3>
-                <p className="text-gray-700 mb-4">
-                  Specialized massage using warm herbal oils for detoxification 
-                  and purification. Experience the ancient art of therapeutic touch.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-orange-600 font-semibold">Therapeutic Touch</span>
-                  <a href="/book-tour" className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-700 transition">
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
+                        {/* Play Button */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="bg-white/90 w-16 h-16 rounded-full flex items-center justify-center text-3xl text-green-600 shadow-lg">
+                            ▶
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-green-700 text-xl font-semibold text-center px-4">
+                        Put Your Video Here
+                      </div>
+                    )}
+                  </div>
 
-            {/* Herbal Treatments */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                <Trees className="w-16 h-16 text-white group-hover:scale-110 transition" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">Herbal Treatments</h3>
-                <p className="text-gray-700 mb-4">
-                  Natural herbal remedies and formulations for various health conditions. 
-                  Experience traditional healing wisdom passed down through generations.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-purple-600 font-semibold">Natural Healing</span>
-                  <a href="/book-tour" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-700 transition">
-                    Book Now
-                  </a>
+                  {/* Bottom */}
+                  <div className="py-4 text-center text-lg font-medium text-gray-700 border-t">
+                    {card.desc}
+                  </div>
                 </div>
+              ))}
               </div>
-            </div>
-          </div>
+      {/* Popup Modal */}
+{selectedVideo && (
+  <div
+    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+    onClick={() => setSelectedVideo(null)} // outside click close
+  >
+    <div
+      className="relative w-[90%] md:w-[750px] bg-black rounded-2xl overflow-hidden"
+      onClick={(e) => e.stopPropagation()} // prevent close on inside click
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setSelectedVideo(null)}
+        className="absolute top-3 right-3 bg-white text-black w-10 h-10 rounded-full text-xl font-bold z-10"
+      >
+        ✕
+      </button>
+
+      {/* Popup Video */}
+      <video
+        src={selectedVideo}
+        controls
+        autoPlay
+        className="w-full h-auto"
+      />
+    </div>
+  </div>
+)}
 
             </div>
             {/* RIGHT SIDE – VIDEO + AD */}
@@ -192,7 +226,7 @@ export default function SpaWellnessPage() {
           </div>
         </div>
       </section>
-
+     
       {/* ================= YOGA & MEDITATION ================= */}
       <section className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-6">
@@ -210,16 +244,16 @@ export default function SpaWellnessPage() {
                 <Sun className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Hatha Yoga</h3>
-                <p className="text-gray-700 mb-4">
-                  Traditional Hatha yoga practices for physical health and mental clarity. 
-                  Morning and evening sessions with experienced instructors.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-orange-600 font-semibold">Physical Harmony</span>
-                  <a href="/book-tour" className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-700 transition">
-                    Book Now
-                  </a>
-                </div>
+              <p className="text-gray-700 mb-4">
+                Traditional Hatha yoga practices for physical health and mental clarity.
+                Morning and evening sessions with experienced instructors.
+              </p>
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-orange-600 font-semibold">Physical Harmony</span>
+                <a href="/book-tour" className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-700 transition">
+                  Book Now
+                </a>
+              </div>
             </div>
 
             {/* Meditation */}
@@ -228,16 +262,16 @@ export default function SpaWellnessPage() {
                 <Mountain className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Meditation</h3>
-                <p className="text-gray-700 mb-4">
-                  Guided meditation and mindfulness practices for inner peace and stress reduction. 
-                  Experience deep relaxation and spiritual awareness in serene Himalayan settings.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-green-600 font-semibold">Inner Peace</span>
-                  <a href="/book-tour" className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition">
-                    Book Now
-                  </a>
-                </div>
+              <p className="text-gray-700 mb-4">
+                Guided meditation and mindfulness practices for inner peace and stress reduction.
+                Experience deep relaxation and spiritual awareness in serene Himalayan settings.
+              </p>
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-green-600 font-semibold">Inner Peace</span>
+                <a href="/book-tour" className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition">
+                  Book Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -260,16 +294,16 @@ export default function SpaWellnessPage() {
                 <Heart className="w-8 h-8 text-pink-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Luxury Spa</h3>
-                <p className="text-gray-700 mb-4">
-                  Premium massage therapies, steam rooms, sauna, and jacuzzi facilities. 
-                  Experienced therapists trained in various international wellness techniques.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-pink-600 font-semibold">Premium Care</span>
-                  <a href="/book-tour" className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-pink-700 transition">
-                    Book Now
-                  </a>
-                </div>
+              <p className="text-gray-700 mb-4">
+                Premium massage therapies, steam rooms, sauna, and jacuzzi facilities.
+                Experienced therapists trained in various international wellness techniques.
+              </p>
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-pink-600 font-semibold">Premium Care</span>
+                <a href="/book-tour" className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-pink-700 transition">
+                  Book Now
+                </a>
+              </div>
             </div>
 
             {/* Wellness Cuisine */}
@@ -278,16 +312,16 @@ export default function SpaWellnessPage() {
                 <Utensils className="w-8 h-8 text-teal-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Wellness Cuisine</h3>
-                <p className="text-gray-700 mb-4">
-                  Nutritious Ayurvedic meals and herbal teas designed for optimal health. 
-                  Fresh, organic ingredients sourced from local Himalayan gardens.
-                </p>
-                <div className="flex items-center justify-between mt-4">
-                  <span className="text-teal-600 font-semibold">Healthy Dining</span>
-                  <a href="/book-tour" className="bg-teal-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-teal-700 transition">
-                    Book Now
-                  </a>
-                </div>
+              <p className="text-gray-700 mb-4">
+                Nutritious Ayurvedic meals and herbal teas designed for optimal health.
+                Fresh, organic ingredients sourced from local Himalayan gardens.
+              </p>
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-teal-600 font-semibold">Healthy Dining</span>
+                <a href="/book-tour" className="bg-teal-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-teal-700 transition">
+                  Book Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -312,7 +346,7 @@ export default function SpaWellnessPage() {
               <div className="p-6">
                 <h3 className="text-2xl text-gray-700 font-bold mb-3">3-Day Rejuvenation</h3>
                 <p className="text-gray-700 mb-4">
-                  Complete wellness program with Ayurvedic treatments, yoga, meditation, 
+                  Complete wellness program with Ayurvedic treatments, yoga, meditation,
                   and spa therapies. Perfect for stress relief and rejuvenation.
                 </p>
                 <div className="flex items-center justify-between mt-4">
@@ -321,8 +355,8 @@ export default function SpaWellnessPage() {
                     Book Now
                   </a>
                 </div>
+              </div>
             </div>
-</div>
             {/* 5-Day Detox */}
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
               <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
@@ -331,7 +365,7 @@ export default function SpaWellnessPage() {
               <div className="p-6">
                 <h3 className="text-2xl text-gray-700 font-bold mb-3">5-Day Detox</h3>
                 <p className="text-gray-700 mb-4">
-                  Intensive detoxification program with Panchakarma, herbal treatments, 
+                  Intensive detoxification program with Panchakarma, herbal treatments,
                   and specialized diet. Experience complete body purification and renewal.
                 </p>
                 <div className="flex items-center justify-between mt-4">
@@ -340,8 +374,8 @@ export default function SpaWellnessPage() {
                     Book Now
                   </a>
                 </div>
+              </div>
             </div>
-</div>
 
             {/* Wellness Retreat */}
             <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
@@ -351,7 +385,7 @@ export default function SpaWellnessPage() {
               <div className="p-6">
                 <h3 className="text-2xl text-gray-700 font-bold mb-3">Wellness Retreat</h3>
                 <p className="text-gray-700 mb-4">
-                  Ultimate wellness experience combining all treatments, yoga, meditation, 
+                  Ultimate wellness experience combining all treatments, yoga, meditation,
                   spa therapies, and healthy cuisine. Perfect for complete transformation.
                 </p>
                 <div className="flex items-center justify-between mt-4">
@@ -360,10 +394,10 @@ export default function SpaWellnessPage() {
                     Book Now
                   </a>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-         </div>
       </section>
 
       {/* ================= SPA & WELLNESS TOUR PRICING ================= */}
@@ -435,7 +469,7 @@ export default function SpaWellnessPage() {
           </div>
         </div>
       </section>
-r
+      r
 
       <ContactCTA />
 

@@ -116,9 +116,12 @@ export default function AirAmbulancePage() {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-wrap gap-4">
-          <button className="px-7 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg transition duration-300">
+          <a
+            href="tel:628978377"
+            className="px-7 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg transition duration-300 inline-block"
+          >
             Book Now
-          </button>
+          </a>
 
           <button className="px-7 py-3 border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white font-semibold rounded-full transition duration-300">
             Learn More
