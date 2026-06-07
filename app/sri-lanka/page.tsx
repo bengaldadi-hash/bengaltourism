@@ -59,7 +59,138 @@ export default function SriLankaPage() {
           </div>
         </div>
       </section>
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
 
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/sri.jpeg"
+          alt="Sri Lanka Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-orange-600">
+            December - April
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Island Paradise of Heritage, Beaches & Culture
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Discover The Timeless Beauty Of
+          <span className="block text-orange-600">
+            Sri Lanka
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Surrounded by the Indian Ocean, Sri Lanka offers a perfect
+          blend of golden beaches, ancient heritage, lush tea plantations,
+          wildlife adventures, and vibrant local culture. Every journey
+          through this island nation reveals breathtaking landscapes and
+          unforgettable experiences.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the colonial charm of Galle, the sacred city of Kandy,
+          the iconic Sigiriya Rock Fortress, the scenic hills of Nuwara Eliya,
+          and the picturesque beauty of Ella. From cultural landmarks to
+          coastal escapes, Sri Lanka has something for every traveler.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Coastal Escapes
+            </h4>
+            <p className="text-sm text-gray-600">
+              Relax on stunning beaches surrounded by turquoise waters
+              and spectacular sunsets.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Cultural Heritage
+            </h4>
+            <p className="text-sm text-gray-600">
+              Discover ancient temples, historic cities, and UNESCO
+              World Heritage Sites.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Scenic Hill Country
+            </h4>
+            <p className="text-sm text-gray-600">
+              Experience rolling tea gardens, misty mountains, and
+              breathtaking train journeys.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Authentic Local Experiences
+            </h4>
+            <p className="text-sm text-gray-600">
+              Witness traditional stilt fishing, local cuisine, and
+              warm island hospitality.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Galle
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Kandy
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Sigiriya
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Nuwara Eliya
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Ella
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Bentota
+          </span>
+
+        </div>
+
+ 
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ================= PACKAGE PRICING ================= */}
       <div className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto space-y-20">

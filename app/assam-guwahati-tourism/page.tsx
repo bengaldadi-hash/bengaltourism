@@ -52,6 +52,136 @@ export default function AssamGuwahatiTourismPage() {
         </div>
       </section>
 
+      <section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/assaa.jpeg"
+          alt="Assam & Meghalaya Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-green-600">
+            October - April
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Waterfalls, Wildlife & Spiritual Wonders
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Explore The Natural Beauty Of
+          <span className="block text-green-600">
+            Assam & Meghalaya
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Discover the enchanting landscapes of Northeast India,
+          where lush green valleys, majestic waterfalls, sacred temples,
+          and unique wildlife create unforgettable travel experiences.
+          Assam and Meghalaya offer the perfect blend of nature,
+          adventure, culture, and spirituality.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Visit the holy Kamakhya Temple, witness the breathtaking
+          waterfalls of Cherrapunjee, explore the vibrant city of Shillong,
+          and experience the world-famous wildlife of Kaziranga National Park.
+          Every destination tells a story of beauty, tradition, and wonder.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+               Kaziranga Wildlife Safari
+            </h4>
+            <p className="text-sm text-gray-600">
+              Home to the famous one-horned rhinoceros and diverse wildlife.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Cherrapunjee Waterfalls
+            </h4>
+            <p className="text-sm text-gray-600">
+              Explore stunning waterfalls, caves and living root bridges.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+           Kamakhya Temple
+            </h4>
+            <p className="text-sm text-gray-600">
+              One of India's most sacred Shakti Peeths attracting devotees worldwide.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+           Shillong Hills
+            </h4>
+            <p className="text-sm text-gray-600">
+              Experience scenic viewpoints, lakes, local culture and pleasant weather.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Shillong
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Kaziranga
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Cherrapunjee
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Kamakhya Temple
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Dawki River
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-green-50 text-green-700 font-medium">
+            Living Root Bridge
+          </span>
+
+        </div>
+
+     
+ 
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
       {/* ================= QUICK FACTS ================= */}
       <section className="py-16 bg-gradient-to-r from-green-50 to-emerald-50">
         <div className="max-w-7xl mx-auto px-6">

@@ -29,7 +29,7 @@ const foreignTourPackages = [
         duration: "4N & 5D",
         desc: "Experience ultra-modern architecture, luxury shopping, and desert adventures.",
         locations: "Dubai, Abu Dhabi, Sharjah",
-        image: "/dubai.jpeg",
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RHViYWl8ZW58MHx8MHx8fDA%3D",
         icon: Building,
         iconColor: "text-amber-500",
         route: "/dubai",
@@ -127,7 +127,7 @@ const foreignTourPackages = [
         duration: "5N & 6D",
         desc: "Relax in overwater villas with crystal clear waters and coral reefs.",
         locations: "Male, Atolls, Resort Islands",
-        image: "/mal.jpeg",
+        image: "/Maldives.jpeg",
         icon: Waves,
         iconColor: "text-cyan-600",
         route: "/maldives",
@@ -239,7 +239,7 @@ const foreignTourPackages = [
         duration: "5N & 6D",
         desc: "Enjoy lush landscapes, wildlife safaris, and pristine beaches.",
         locations: "Colombo, Kandy, Bentota",
-        image: "/sri.jpeg",
+        image: "https://images.unsplash.com/photo-1580910527739-556eb89f9d65?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3JpJTIwbGFua2F8ZW58MHx8MHx8fDA%3D",
         icon: Waves,
         iconColor: "text-cyan-500",
         route: "/sri-lanka",
@@ -344,13 +344,13 @@ export default function ForeignToursPackagesPage() {
                                         className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col group"
                                     >
                                         {/* Image */}
-                                        <div className="relative h-76 overflow-hidden bg-gray-100">
+                                        <div className="relative h-56 overflow-hidden">
                                             <Image
                                                 src={item.image}
                                                 alt={item.title}
                                                 fill
                                                 priority={i < 3}
-                                                className="object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+                                                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

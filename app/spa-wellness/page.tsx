@@ -261,7 +261,7 @@ export default function SpaWellnessPage() {
                 </div>
               </div>
             )}
-            https://youtube.com/shorts/Nu6fh40JrWM?si=Fc1fL-T-PqLZ9C48
+           
           </div>
         </div>
       </section>

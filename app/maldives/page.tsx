@@ -60,7 +60,139 @@ export default function MaldivesPage() {
           </div>
         </div>
       </section>
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
 
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/mal.jpeg"
+          alt="Maldives Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-sky-600">
+            Throughout The Year
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center bg-sky-50 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Luxury Islands, Crystal Waters & Unforgettable Escapes
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Escape To The Paradise Of
+          <span className="block text-sky-600">
+            Maldives
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Experience one of the world's most beautiful island destinations,
+          where turquoise lagoons, white sandy beaches, and luxury overwater
+          villas create the perfect tropical getaway. The Maldives offers a
+          peaceful retreat surrounded by breathtaking natural beauty and
+          world-class hospitality.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the vibrant capital city of Malé, relax on the pristine
+          beaches of Maafushi, discover the beauty of Hulhumalé, and enjoy
+          unforgettable island adventures across Ari Atoll and Baa Atoll.
+          Whether you're planning a honeymoon, family vacation, or luxury
+          escape, the Maldives promises memories that last a lifetime.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Luxury Island Resorts
+            </h4>
+            <p className="text-sm text-gray-600">
+              Stay in world-famous resorts featuring overwater villas,
+              private beaches, and premium hospitality.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Crystal Clear Lagoons
+            </h4>
+            <p className="text-sm text-gray-600">
+              Swim in turquoise waters surrounded by stunning coral reefs
+              and breathtaking ocean views.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Marine Life Experiences
+            </h4>
+            <p className="text-sm text-gray-600">
+              Discover colorful coral gardens, tropical fish, manta rays,
+              and diverse underwater ecosystems.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Romantic Getaways
+            </h4>
+            <p className="text-sm text-gray-600">
+              Perfect destination for honeymoons, anniversaries, and luxury
+              vacations with unforgettable sunset views.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Malé City
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Maafushi
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Hulhumalé
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Ari Atoll
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Baa Atoll
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-sky-50 text-sky-700 font-medium">
+            Overwater Villas
+          </span>
+
+        </div>
+
+  
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ================= DETAILED ITINERARY ================= */}
       <div className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto space-y-20">

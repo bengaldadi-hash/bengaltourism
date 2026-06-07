@@ -60,7 +60,139 @@ export default function DubaiPage() {
           </div>
         </div>
       </section>
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
 
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/dubai.jpeg"
+          alt="Dubai Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-amber-600">
+            Throughout The Year
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Luxury, Adventure & Modern Wonders
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Experience The Magic Of
+          <span className="block text-amber-600">
+            Dubai
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Discover a city where futuristic architecture, luxury
+          experiences, golden deserts, and world-class attractions
+          come together to create unforgettable memories. Dubai is a
+          destination that perfectly blends tradition with innovation,
+          offering something for every traveler.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          From the iconic Burj Khalifa and the vibrant Dubai Marina
+          to thrilling desert safaris and the stunning Palm Jumeirah,
+          every corner of Dubai offers a unique experience. Whether
+          you're planning a family vacation, honeymoon, shopping trip,
+          or luxury getaway, Dubai delivers excellence at every step.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Burj Khalifa Experience
+            </h4>
+            <p className="text-sm text-gray-600">
+              Visit the world's tallest building and enjoy breathtaking
+              panoramic views of Dubai's skyline.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Desert Safari Adventures
+            </h4>
+            <p className="text-sm text-gray-600">
+              Enjoy dune bashing, desert camps, cultural performances,
+              and unforgettable sunset experiences.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Palm Jumeirah & Beaches
+            </h4>
+            <p className="text-sm text-gray-600">
+              Relax at luxury beachfront destinations and admire one of
+              the world's most famous man-made islands.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Shopping & Entertainment
+            </h4>
+            <p className="text-sm text-gray-600">
+              Explore premium malls, fine dining, nightlife, and
+              entertainment experiences across the city.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Attractions */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Burj Khalifa
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Dubai Marina
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Palm Jumeirah
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Desert Safari
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Dubai Mall
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-amber-50 text-amber-700 font-medium">
+            Old Dubai
+          </span>
+
+        </div>
+
+     
+
+      </div>
+
+    </div>
+  </div>
+</section>
       <div className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto space-y-16">
 

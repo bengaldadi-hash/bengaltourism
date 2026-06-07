@@ -60,6 +60,140 @@ export default function AndamanNicobarTourismPage() {
           </div>
         </div>
       </section>
+      <section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/andamann.jpeg"
+          alt="Andaman & Nicobar Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-cyan-600">
+            Throughout The Year
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center bg-cyan-50 text-cyan-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Tropical Paradise of India
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Discover The Wonders Of
+          <span className="block text-cyan-600">
+            Andaman & Nicobar Islands
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Surrounded by crystal-clear waters and pristine beaches,
+          Andaman & Nicobar Islands offer an unforgettable escape
+          into nature. From white sandy shores and turquoise lagoons
+          to vibrant coral reefs and rich marine life, every moment
+          here feels like a dream.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the historical landmarks of Port Blair, relax on the
+          world-famous Radhanagar Beach, experience the beauty of
+          Havelock and Neil Island, and discover hidden natural wonders
+          across the archipelago. Whether you're looking for adventure,
+          relaxation, or a romantic getaway, Andaman offers the perfect
+          island experience.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              World-Class Beaches
+            </h4>
+            <p className="text-sm text-gray-600">
+              Relax on pristine beaches known for their soft white sand
+              and crystal-clear waters.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Marine Life & Coral Reefs
+            </h4>
+            <p className="text-sm text-gray-600">
+              Witness colorful coral ecosystems and diverse underwater
+              marine species.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Island Adventures
+            </h4>
+            <p className="text-sm text-gray-600">
+              Enjoy island hopping, water activities, nature trails,
+              and unforgettable coastal experiences.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Culture & Heritage
+            </h4>
+            <p className="text-sm text-gray-600">
+              Discover the fascinating history, traditions, and heritage
+              that make the islands unique.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Port Blair
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Havelock Island
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Neil Island
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Ross Island
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Baratang Island
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+            Radhanagar Beach
+          </span>
+
+        </div>
+
+  
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ================= HAVELOCK - NEIL - ROSS PACKAGE ================= */}
       <section className="py-20 bg-white">

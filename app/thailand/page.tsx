@@ -60,6 +60,140 @@ export default function ThailandPage() {
           </div>
         </div>
       </section>
+      <section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/thai.jpeg"
+          alt="Thailand Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-orange-600">
+            Throughout The Year
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Culture, Beaches, Islands & Nightlife
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Experience The Vibrant Spirit Of
+          <span className="block text-orange-600">
+            Thailand
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Thailand is one of Asia's most exciting travel destinations,
+          offering a perfect blend of ancient traditions, stunning
+          beaches, vibrant cities, tropical islands, and world-famous
+          hospitality. From magnificent temples to crystal-clear waters,
+          every journey here is filled with unforgettable experiences.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the bustling streets of Bangkok, discover the cultural
+          heritage of Chiang Mai, relax on the beaches of Phuket, and
+          experience the breathtaking beauty of the Phi Phi Islands.
+          Whether you're seeking adventure, relaxation, shopping, or
+          cultural exploration, Thailand has something for everyone.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Iconic Temples & Heritage
+            </h4>
+            <p className="text-sm text-gray-600">
+              Discover Thailand's magnificent temples, royal palaces,
+              and centuries-old cultural landmarks.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Tropical Island Escapes
+            </h4>
+            <p className="text-sm text-gray-600">
+              Experience pristine beaches, turquoise waters, and
+              breathtaking island scenery.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Local Markets & Cuisine
+            </h4>
+            <p className="text-sm text-gray-600">
+              Explore floating markets, street food culture, and
+              authentic Thai culinary experiences.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 border rounded-2xl p-5">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Entertainment & Nightlife
+            </h4>
+            <p className="text-sm text-gray-600">
+              Enjoy world-class entertainment, shopping districts,
+              and vibrant nightlife experiences.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Bangkok
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Chiang Mai
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Phuket
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Phi Phi Islands
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Sukhothai
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-medium">
+            Krabi
+          </span>
+
+        </div>
+
+        {/* CTA */}
+   
+
+      </div>
+
+    </div>
+  </div>
+</section>
       <div className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto space-y-20">
 

@@ -60,7 +60,7 @@ const brands = [
     location: "KOLKATA",
     description:
       "Luxury & premium cars with modern features, best offers & customer support services.",
-    image: "/oudh.webp",
+    image: "/Oudh.webp",
     category: "automobile",
     action: "View Details",
   },
@@ -139,13 +139,13 @@ const brands = [
   },
 
   {
-    id: 12,
-    name: "Top Darjeeling Tea Brand",
-    brandName: "Advertise your name here",
+ id: 12,
+    name: "Top Darjeeling Tea Brand ",
+    brandName: "Makaibari Tea",
     location: "DARJEELING",
     description:
       "Premium Darjeeling tea directly from the finest tea gardens with authentic aroma & flavor.",
-    image: "",
+    image: "/himalayan.webp",
     category: "tea",
     action: "View Details",
   },
@@ -171,17 +171,7 @@ const brands = [
     category: "food",
     action: "View Details",
   },
-  {
-    id: 15,
-    name: "Top Darjeeling Tea Brand ",
-    brandName: "Makaibari Tea",
-    location: "DARJEELING",
-    description:
-      "Premium Darjeeling tea directly from the finest tea gardens with authentic aroma & flavor.",
-    image: "/himalayan.webp",
-    category: "tea",
-    action: "View Details",
-  },
+
 ];
 export default function BrandsPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -479,7 +469,7 @@ export default function BrandsPage() {
                 </div>
 
                 {/* ================= IMAGE ================= */}
-                <div className="relative h-60 bg-gray-50 flex items-center justify-center overflow-hidden mt-4">
+                <div className="relative h-70 bg-gray-50 flex items-center justify-center overflow-hidden mt-4">
 
                   {brand.image ? (
                     <Image

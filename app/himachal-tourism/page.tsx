@@ -61,7 +61,135 @@ export default function HimachalTourismPage() {
       </section>
 
       {/* ================= HIMACHAL HIGHLIGHTS ================= */}
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
 
+      {/* Left Image */}
+      <div className="relative">
+        <img
+          src="/himachall.jpeg"
+          alt="Himachal Pradesh Tour"
+          className="w-full rounded-[32px] shadow-2xl"
+        />
+
+        <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-lg">
+          <p className="text-sm text-gray-500">
+            Best Time To Visit
+          </p>
+          <h4 className="font-bold text-orange-500">
+            December - February
+          </h4>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div>
+
+        <span className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+          Explore Mountains, Culture & Adventure
+        </span>
+
+        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Discover The Beauty Of
+          <span className="block text-orange-500">
+            Himachal Pradesh
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Escape into the breathtaking landscapes of Himachal Pradesh,
+          where snow-covered mountains, ancient temples, pine forests,
+          and charming hill stations create unforgettable memories.
+          Experience nature, culture, adventure, and serenity all in
+          one destination.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the vibrant streets of Shimla, the scenic valleys
+          of Kullu, the adventure capital Manali, and the legendary
+          Rohtang Pass. Whether you're seeking a romantic getaway,
+          family vacation, or thrilling mountain adventure,
+          Himachal has something for everyone.
+        </p>
+
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+               Scenic Hill Stations
+            </h4>
+            <p className="text-sm text-gray-600">
+              Visit Shimla, Manali, Kullu and other picturesque
+              destinations surrounded by Himalayan beauty.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+             Mountain Adventures
+            </h4>
+            <p className="text-sm text-gray-600">
+              Enjoy trekking, camping, off-road tours,
+              skiing and exciting road trips.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+             Heritage & Temples
+            </h4>
+            <p className="text-sm text-gray-600">
+              Discover ancient wooden temples and rich
+              Himalayan traditions.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl border">
+            <h4 className="font-bold text-gray-900 mb-2">
+            Snow Experiences
+            </h4>
+            <p className="text-sm text-gray-600">
+              Witness snowfall, snowy landscapes and
+              winter adventures during peak season.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Popular Destinations */}
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-medium">
+            Shimla
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-medium">
+            Kullu
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-medium">
+            Manali
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-medium">
+            Rohtang Pass
+          </span>
+
+          <span className="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-medium">
+            Solang Valley
+          </span>
+
+        </div>
+
+    
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ================= HIMACHAL MAIN PACKAGE ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
