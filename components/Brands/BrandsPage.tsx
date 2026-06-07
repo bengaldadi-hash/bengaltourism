@@ -80,11 +80,11 @@ const brands = [
   {
     id: 7,
     name: "Top Bengal Rice Brand",
-    brandName: "Advertise your name here",
+    brandName: "Gobindo Bhog from Burdwan",
     location: "WEST BENGAL",
     description:
       "Premium Bengal rice varieties with authentic aroma, purity & traditional taste.",
-    image: "",
+    image: "/gobindo_bhog.jpg",
     category: "food",
     action: "View Details",
   },
