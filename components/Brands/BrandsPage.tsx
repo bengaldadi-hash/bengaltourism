@@ -8,11 +8,11 @@ const brands = [
   {
     id: 1,
     name: "Top Gold jewellery Brand",
-    brandName: "Senco Gold & Diamonds",
+    brandName: "P C Chandra Jewellers",
     location: "KOLKATA",
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
-    image: "/SEN.png",
+    image: "/ps.avif",
     category: "food",
     action: "View Details",
   },
@@ -68,11 +68,11 @@ const brands = [
   {
     id: 6,
     name: "Top Handloom Brand",
-    brandName: "Advertise your name here",
+    brandName: "Tantuja",
     location: "BENGAL",
     description:
       "Traditional Bengal handloom collections with authentic craftsmanship & heritage weaving.",
-    image: "",
+    image: "/tan.png",
     category: "handloom",
     action: "View Details",
   },

@@ -322,8 +322,9 @@ export default function ContactPage() {
       </section>
 
 
+
       {/* ================= FAQ & MAP ================= */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-20 bg-white ">
         <div className="max-w-7xl mx-auto px-6">
           <div className=" mb-16">
             <h2 className="text-4xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
@@ -412,7 +413,57 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+<section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white  p-10 lg:p-14">
+  <div className="max-w-4xl mx-auto text-center">
 
+
+<span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-6">
+  Connect With Us On Facebook
+</span>
+
+<h2 className="text-4xl lg:text-5xl font-bold mb-6">
+  Follow West Bengal Tourism
+</h2>
+
+<p className="text-lg text-blue-100 leading-relaxed mb-8">
+  Stay updated with the latest travel destinations, tourism news,
+  cultural events, travel experiences, and exclusive updates from
+  West Bengal Tourism. Follow our official Facebook page and become
+  part of a vibrant community of travelers and explorers.
+</p>
+
+<div className="flex flex-wrap justify-center gap-4 mb-8">
+
+  <span className="bg-white/15 px-5 py-3 rounded-full">
+    Follow
+  </span>
+
+  <span className="bg-white/15 px-5 py-3 rounded-full">
+    Review
+  </span>
+
+  <span className="bg-white/15 px-5 py-3 rounded-full">
+    Post
+  </span>
+
+  <span className="bg-white/15 px-5 py-3 rounded-full">
+    Share
+  </span>
+
+</div>
+
+<a
+  href="https://www.facebook.com/BengalTourismWestBengalTourism"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center bg-white text-blue-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition"
+>
+  Visit Official Facebook Page
+</a>
+
+
+  </div>
+</section>
     </>
   );
 }
