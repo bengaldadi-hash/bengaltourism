@@ -120,7 +120,7 @@ const brands = [
     location: "KOLKATA",
     description:
       "Authentic Chinese cuisine, dim sums, noodles & oriental specialties with premium taste.",
-    image: "/Bhooter.jpeg",
+    image: "bhooterr.jpeg",
     category: "food",
     action: "View Details",
   },
