@@ -203,7 +203,7 @@ export default function SpaWellnessPage() {
                   className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group"
                 >
                   <img
-                    src="https://img.youtube.com/vi/Nu6fh40JrWM/maxresdefault.jpg"
+                    src="https://img.youtube.com/vi/ZGRPxeeqdpM/maxresdefault.jpg"
                     alt="Video Thumbnail"
                     className="w-full h-full object-cover"
                   />
@@ -253,7 +253,7 @@ export default function SpaWellnessPage() {
 
                   <iframe
                     className="w-full h-full rounded-xl"
-                    src="https://www.youtube.com/embed/Nu6fh40JrWM?autoplay=1"
+                    src="https://youtube.com/shorts/ZGRPxeeqdpM?si=gS_iiY1RFnT7SsFZ"
                     title="Spa Wellness Video"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
