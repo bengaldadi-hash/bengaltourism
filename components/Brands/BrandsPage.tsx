@@ -115,7 +115,7 @@ const brands = [
 
   {
     id: 10,
-    name: "Top Bengali Couisine Brand",
+    name: "Top Bengal Rice Brand",
     brandName: "Bhooter Raja Dilo Bor",
     location: "KOLKATA",
     description:
