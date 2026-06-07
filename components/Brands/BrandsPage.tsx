@@ -20,11 +20,11 @@ const brands = [
   {
     id: 2,
     name: "Top Electronic Brand",
-    brandName: "Advertise your name here",
+    brandName: "Khosla Electronics",
     location: "KOLKATA",
     description:
       "Latest electronic gadgets, home appliances, smart devices & premium technology products.",
-    image: "",
+    image: "/khosla.avif",
     category: "electronics",
     action: "View Details",
   },
@@ -32,35 +32,35 @@ const brands = [
   {
     id: 3,
     name: "Top Bengali Cuisine Brand",
-    brandName: "Advertise your name here",
+    brandName: "6, Ballygunge Place | Kolkata",
     location: "KOLKATA",
     description:
       "Authentic Bengali cuisine with traditional flavors, seafood delicacies & heritage recipes.",
-    image: "",
+    image: "/Ballygunge.webp",
     category: "food",
     action: "View Details",
   },
 
   {
     id: 4,
-    name: "Top Saree Brand",
-    brandName: "Advertise your name here",
+    name: "Top Mithai Brand",
+    brandName: "Balaram Mullick & Radharam Mullick",
     location: "WEST BENGAL",
     description:
       "Exclusive saree collections including Jamdani, Tangail, Baluchari & designer handloom sarees.",
-    image: "",
-    category: "fashion",
+    image: "/Balaram.avif",
+    category: "food",
     action: "View Details",
   },
 
   {
     id: 5,
-    name: "Top Car Brand",
-    brandName: "Advertise your name here",
+    name: "Top Awadhi Couisine",
+    brandName: "Oudh 1590",
     location: "KOLKATA",
     description:
       "Luxury & premium cars with modern features, best offers & customer support services.",
-    image: "",
+    image: "/oudh.webp",
     category: "automobile",
     action: "View Details",
   },
@@ -115,12 +115,12 @@ const brands = [
 
   {
     id: 10,
-    name: "Top Chinese Cousine Brand",
-    brandName: "Advertise your name here",
+    name: "Top Bengali Couisine Brand",
+    brandName: "Bhooter Raja Dilo Bor",
     location: "KOLKATA",
     description:
       "Authentic Chinese cuisine, dim sums, noodles & oriental specialties with premium taste.",
-    image: "",
+    image: "/Bhooter.jpeg",
     category: "food",
     action: "View Details",
   },
@@ -128,11 +128,12 @@ const brands = [
   {
     id: 11,
     name: "Top Mughlai Cousine Brand",
-    brandName: "Advertise your name here",
+    brandName: "Arsalan",
     location: "KOLKATA",
+    
     description:
       "Famous Mughlai dishes including biryani, kebabs, rezala & royal cuisine collections.",
-    image: "",
+    image: "/Arsalan.png",
     category: "food",
     action: "View Details",
   },
@@ -145,6 +146,39 @@ const brands = [
     description:
       "Premium Darjeeling tea directly from the finest tea gardens with authentic aroma & flavor.",
     image: "",
+    category: "tea",
+    action: "View Details",
+  },
+  {
+    id: 13,
+    name: "Authentic Chinese Cousine",
+    brandName: "At China Town",
+    location: "KOLKATA",
+    description:
+      "Authentic Chinese cuisine with traditional flavors, seafood delicacies & heritage recipes.",
+    image: "/chinatown.jpg",
+    category: "food",
+    action: "View Details",
+  },
+  {
+    id: 14,
+    name: "Top Bengal Snacks Brand",
+    brandName: "Mitra Cafe | Kolkata",
+    location: "KOLKATA",
+    description:
+      "Authentic Bengali snacks with traditional flavors, street food specialties & heritage recipes.",
+    image: "/mitra.jpeg",
+    category: "food",
+    action: "View Details",
+  },
+  {
+    id: 15,
+    name: "Top Darjeeling Tea Brand ",
+    brandName: "Makaibari Tea",
+    location: "DARJEELING",
+    description:
+      "Premium Darjeeling tea directly from the finest tea gardens with authentic aroma & flavor.",
+    image: "/himalayan.webp",
     category: "tea",
     action: "View Details",
   },
@@ -247,6 +281,85 @@ export default function BrandsPage() {
           </div>
         </div>
       </section>
+
+      {/* ================= PROMOTE YOUR BRAND SECTION ================= */}
+      <section className="bg-gradient-to-r from-yellow-50 to-orange-50 px-4 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Image Side */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/brand.jpeg"
+                  alt="Promote Your Brand"
+                  width={600}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Content Side */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                Promote Your Brand with
+                <span className="block bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-700 bg-clip-text text-transparent">
+                  Bengal Tourism
+                </span>
+              </h2>
+              
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Join our exclusive network of premium brands and reach thousands of potential customers across Bengal and beyond. Showcase your products, services, and experiences to a targeted audience actively seeking quality offerings.
+              </p>
+
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Increased brand visibility and recognition</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Targeted marketing to tourism audience</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Premium placement on our platform</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Direct customer engagement and leads</span>
+                </li>
+              </ul>
+
+              <div className="pt-4">
+                <a
+                  href="/contact"
+                  className="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                >
+                  Get Started Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white px-4 py-16">
         <div className="max-w-7xl mx-auto bg-white px-4 py-16">
           <div className="text-center mb-12">

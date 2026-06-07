@@ -45,6 +45,8 @@ const cards = [
 ];
 export default function SpaWellnessPage() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [openVideo, setOpenVideo] = useState(false);
+
   return (
     <main className="text-gray-800">
 
@@ -111,99 +113,111 @@ export default function SpaWellnessPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
             <div className="lg:col-span-2 space-y-8">
               <div className="grid md:grid-cols-2 gap-8">
-               {cards.map((card) => (
-                <div
-                  key={card.id}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
-                >
-                  {/* Top */}
-                  <div className="bg-green-600 text-white text-center py-4 text-xl font-bold">
-                    {card.title}
-                  </div>
-
-                  {/* Middle */}
+                {cards.map((card) => (
                   <div
-                    className="h-64 bg-green-100 relative cursor-pointer overflow-hidden"
-                    onClick={() => card.video && setSelectedVideo(card.video)}
+                    key={card.id}
+                    className="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
                   >
-                    {card.video ? (
-                      <>
-                        {/* Direct Video Preview */}
-                        <video
-                          src={card.video}
-                          muted
-                          autoPlay
-                          loop
-                          className="w-full h-full object-cover"
-                        />
+                    {/* Top */}
+                    <div className="bg-green-600 text-white text-center py-4 text-xl font-bold">
+                      {card.title}
+                    </div>
 
-                        {/* Play Button */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="bg-white/90 w-16 h-16 rounded-full flex items-center justify-center text-3xl text-green-600 shadow-lg">
-                            ▶
+                    {/* Middle */}
+                    <div
+                      className="h-64 bg-green-100 relative cursor-pointer overflow-hidden"
+                      onClick={() => card.video && setSelectedVideo(card.video)}
+                    >
+                      {card.video ? (
+                        <>
+                          {/* Direct Video Preview */}
+                          <video
+                            src={card.video}
+                            muted
+                            autoPlay
+                            loop
+                            className="w-full h-full object-cover"
+                          />
+
+                          {/* Play Button */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="bg-white/90 w-16 h-16 rounded-full flex items-center justify-center text-3xl text-green-600 shadow-lg">
+                              ▶
+                            </div>
                           </div>
+                        </>
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-green-700 text-xl font-semibold text-center px-4">
+                          Put Your Video Here
                         </div>
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-green-700 text-xl font-semibold text-center px-4">
-                        Put Your Video Here
-                      </div>
-                    )}
-                  </div>
+                      )}
+                    </div>
 
-                  {/* Bottom */}
-                  <div className="py-4 text-center  text-lg font-semibold text-gray-700 ">
-                    {card.desc}
+                    {/* Bottom */}
+                    <div className="py-4 text-center  text-lg font-semibold text-gray-700 ">
+                      {card.desc}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* Popup Modal */}
+              {selectedVideo && (
+                <div
+                  className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                  onClick={() => setSelectedVideo(null)} // outside click close
+                >
+                  <div
+                    className="relative w-[90%] md:w-[750px] bg-black rounded-2xl overflow-hidden"
+                    onClick={(e) => e.stopPropagation()} // prevent close on inside click
+                  >
+                    {/* Close Button */}
+                    <button
+                      onClick={() => setSelectedVideo(null)}
+                      className="absolute top-3 right-3 bg-white text-black w-10 h-10 rounded-full text-xl font-bold z-10"
+                    >
+                      ✕
+                    </button>
+
+                    {/* Popup Video */}
+                    <video
+                      src={selectedVideo}
+                      controls
+                      autoPlay
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
-              ))}
-              </div>
-      {/* Popup Modal */}
-{selectedVideo && (
-  <div
-    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-    onClick={() => setSelectedVideo(null)} // outside click close
-  >
-    <div
-      className="relative w-[90%] md:w-[750px] bg-black rounded-2xl overflow-hidden"
-      onClick={(e) => e.stopPropagation()} // prevent close on inside click
-    >
-      {/* Close Button */}
-      <button
-        onClick={() => setSelectedVideo(null)}
-        className="absolute top-3 right-3 bg-white text-black w-10 h-10 rounded-full text-xl font-bold z-10"
-      >
-        ✕
-      </button>
-
-      {/* Popup Video */}
-      <video
-        src={selectedVideo}
-        controls
-        autoPlay
-        className="w-full h-auto"
-      />
-    </div>
-  </div>
-)}
+              )}
 
             </div>
-            {/* RIGHT SIDE – VIDEO + AD */}
+    
             <div className="space-y-8 lg:sticky lg:top-24 h-fit">
-
-              {/* Video Section */}
+              {/* RIGHT SIDE – VIDEO + AD */}
               <div className="bg-white rounded-3xl shadow-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">
-                  Watch Spa Wellness video
+                  Top Wellness & Spa Center
                 </h3>
 
-                <div className="aspect-video rounded-xl overflow-hidden">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                    title="Tonle Sap Lake Tour"
-                    allowFullScreen
-                  ></iframe>
+                <div
+                  onClick={() => setOpenVideo(true)}
+                  className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/Nu6fh40JrWM/maxresdefault.jpg"
+                    alt="Video Thumbnail"
+                    className="w-full h-full object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                      ▶
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <p className="text-base text-center">
+                   Advertise your Name here
+                  </p>
                 </div>
               </div>
 
@@ -220,13 +234,38 @@ export default function SpaWellnessPage() {
                   Contact For Promotion
                 </button>
               </div>
-
             </div>
+            {openVideo && (
+              <div
+                className="fixed inset-0 bg-black/80 z-[9999] flex items-center justify-center p-4"
+                onClick={() => setOpenVideo(false)}
+              >
+                <div
+                  className="relative w-full max-w-4xl aspect-video"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={() => setOpenVideo(false)}
+                    className="absolute -top-12 right-0 text-white text-3xl"
+                  >
+                    ✕
+                  </button>
 
+                  <iframe
+                    className="w-full h-full rounded-xl"
+                    src="https://www.youtube.com/embed/Nu6fh40JrWM?autoplay=1"
+                    title="Spa Wellness Video"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            )}
+            https://youtube.com/shorts/Nu6fh40JrWM?si=Fc1fL-T-PqLZ9C48
           </div>
         </div>
       </section>
-     
+
       {/* ================= YOGA & MEDITATION ================= */}
       <section className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-6">
