@@ -59,7 +59,122 @@ export default function HaridwarRishikeshTourismPage() {
           </div>
         </div>
       </section>
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
 
+      {/* Left Image */}
+      <div>
+        <img
+          src="/utthrakhand.jpeg"
+          alt="Uttarakhand Tour"
+          className="w-full rounded-3xl shadow-xl"
+        />
+      </div>
+
+      {/* Right Content */}
+      <div>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-orange-600 text-sm font-semibold mb-5">
+          Land of Faith, Nature & Adventure
+        </span>
+
+        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          Discover The Divine Beauty Of
+          <span className="block text-orange-500">
+            Uttarakhand
+          </span>
+        </h2>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          Nestled in the lap of the Himalayas, Uttarakhand is a
+          perfect destination for spiritual seekers, nature lovers,
+          and adventure enthusiasts. From sacred temples and holy
+          rivers to breathtaking mountain landscapes, every corner
+          offers a memorable experience.
+        </p>
+
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          Explore the peaceful ghats of Rishikesh and Haridwar,
+          witness the beauty of Nainital's lakes, enjoy the colonial
+          charm of Mussoorie, and embark on the sacred Char Dham
+          Yatra for a truly life-changing journey.
+        </p>
+
+        {/* Features */}
+        <div className="grid md:grid-cols-2 gap-5 mb-8">
+
+          <div className="bg-gray-50 p-5 rounded-2xl">
+            <h4 className="font-bold text-gray-900 mb-2">
+          Spiritual Destinations
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Kedarnath, Badrinath, Haridwar and Rishikesh attract
+              millions of pilgrims every year.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl">
+            <h4 className="font-bold text-gray-900 mb-2">
+            Char Dham by Helicopter
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Experience a comfortable and time-saving pilgrimage
+              with premium helicopter services.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl">
+            <h4 className="font-bold text-gray-900 mb-2">
+             Scenic Beauty
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Snow-capped mountains, rivers, waterfalls, forests and
+              picturesque valleys.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-5 rounded-2xl">
+            <h4 className="font-bold text-gray-900 mb-2">
+              Adventure Activities
+            </h4>
+            <p className="text-gray-600 text-sm">
+              River rafting, trekking, camping, paragliding and many
+              more thrilling experiences.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Quick Highlights */}
+        <div className="flex flex-wrap gap-3 mb-8">
+          <span className="px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-medium">
+            Rishikesh
+          </span>
+
+          <span className="px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-medium">
+            Haridwar
+          </span>
+
+          <span className="px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-medium">
+            Nainital
+          </span>
+
+          <span className="px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-medium">
+            Mussoorie
+          </span>
+
+          <span className="px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-medium">
+            Kedarnath
+          </span>
+        </div>
+
+   
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ================= HARIDWAR-RISHIKESH CIRCUIT PACKAGE ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">

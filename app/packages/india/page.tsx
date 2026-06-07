@@ -16,7 +16,7 @@ const indiaPackages = [
     price: "₹ 9500",
     desc: "Experience the divine Ganga Aarti at Haridwar, explore yoga capital Rishikesh, enjoy river rafting, temples, and peaceful Himalayan vibes.",
     locations: "Haridwar, Rishikesh",
-    image: "https://images.unsplash.com/photo-1650341259809-9314b0de9268?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/utthrakhand.jpeg",
     icon: Mountain,
     iconColor: "text-orange-500",
     route: "/haridwar-rishikesh-tourism",
@@ -77,7 +77,7 @@ const indiaPackages = [
     price: "₹ 32500",
     desc: "Experience the majestic landscapes of Leh & Ladakh including high mountain passes, crystal-clear lakes, and ancient monasteries.",
     locations: "Leh, Nubra Valley, Pangong Lake, Khardung La, Shanti Stupa",
-    image: "/leh1.jpg",
+    image: "/leh.jpeg",
     icon: Mountain,
     iconColor: "text-sky-500",
     route: "/leh-ladakh-tour",
@@ -123,7 +123,7 @@ const indiaPackages = [
         price: "₹ 14500",
         desc: "Explore snow-capped peaks, valleys, and colonial hill towns.",
         locations: "Shimla, Manali, Kullu, Dharamshala",
-        image: "/Himachal.jpeg",
+        image: "/himachall.jpeg",
         icon: Mountain,
         iconColor: "text-green-500",
         route: "/himachal-tourism",
@@ -153,7 +153,7 @@ const indiaPackages = [
         price: "₹ 14500",
         desc: "Explore pristine beaches, coral reefs, and tropical forests.",
         locations: "Port Blair, Havelock, Neil Island, Ross Island",
-        image: "/Andaman.jpeg",
+        image: "/andamann.jpeg",
         icon: Waves,
         iconColor: "text-cyan-500",
         route: "/andaman-nicobar-tourism",
@@ -168,7 +168,7 @@ const indiaPackages = [
         price: "₹ 14500",
         desc: "Experience wildlife safaris, tea gardens, and Brahmaputra river.",
         locations: "Guwahati, Kaziranga, Shillong, Tezpur",
-        image: "/hotal/Kamakhya41.webp",
+        image: "/assaa.jpeg",
         icon: Trees,
         iconColor: "text-green-600",
         route: "/assam-guwahati-tourism",
@@ -274,13 +274,13 @@ export default function IndiaPackagesPage() {
                                         className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col group"
                                     >
                                         {/* Image */}
-                                        <div className="relative h-56 overflow-hidden">
+                                        <div className="relative h-76 overflow-hidden bg-gray-100">
                                             <Image
                                                 src={item.image}
                                                 alt={item.title}
                                                 fill
                                                 priority={i < 3}
-                                                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                                className="object-contain transition-transform duration-700 ease-out group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

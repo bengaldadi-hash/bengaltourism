@@ -59,6 +59,90 @@ export default function LehLadakhTourPage() {
           </div>
         </div>
       </section>
+      <section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+      {/* Left Image */}
+      <div>
+        <img
+          src="/leh.jpeg"
+          alt="Leh Ladakh Tour"
+          className="w-full rounded-3xl shadow-xl"
+        />
+      </div>
+
+      {/* Right Content */}
+      <div>
+        <span className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Explore The Land Of High Passes
+        </span>
+
+        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          Discover The Magical Beauty of
+          <span className="text-orange-500"> Leh & Ladakh</span>
+        </h2>
+
+        <p className="text-gray-600 text-lg leading-relaxed mb-6">
+          Experience the breathtaking landscapes of Leh & Ladakh,
+          where crystal-clear lakes, majestic mountains, ancient
+          monasteries, and thrilling mountain passes create memories
+          that last a lifetime. From the famous Pangong Lake to the
+          adventurous Khardung La Pass, every destination offers a
+          unique story waiting to be explored.
+        </p>
+
+        <p className="text-gray-600 text-lg leading-relaxed mb-8">
+          Whether you're seeking adventure, cultural exploration,
+          photography, or peaceful escapes, our carefully designed
+          Ladakh tours provide the perfect blend of comfort, safety,
+          and unforgettable experiences.
+        </p>
+
+        {/* Highlights */}
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="bg-gray-50 p-4 rounded-2xl">
+            <h4 className="font-bold text-gray-900">
+              Pangong Lake
+            </h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Famous blue lake surrounded by majestic mountains.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-4 rounded-2xl">
+            <h4 className="font-bold text-gray-900">
+              Nubra Valley
+            </h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Desert landscapes and thrilling off-road adventures.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-4 rounded-2xl">
+            <h4 className="font-bold text-gray-900">
+          Ancient Monasteries
+            </h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Discover Ladakh's rich Buddhist heritage and culture.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-4 rounded-2xl">
+            <h4 className="font-bold text-gray-900">
+           Scenic Photography
+            </h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Capture some of India's most stunning landscapes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ================= MAIN LADAKH PACKAGE ================= */}
       <section className="py-20 bg-white">
