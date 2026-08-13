@@ -13,7 +13,7 @@ const brands = [
     location: "KOLKATA",
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
-    image: "/ps.avif",
+    image: "",
     video:"add/add2.mp4",
     category: "jewellery",
     action: "View Details",
