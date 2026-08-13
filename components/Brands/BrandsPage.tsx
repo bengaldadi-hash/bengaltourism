@@ -3,17 +3,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Star, MapPin, X } from "lucide-react";
+import { video } from "framer-motion/client";
 
 const brands = [
   {
     id: 1,
     name: "Top Gold jewellery Brand",
-    brandName: "P C Chandra Jewellers",
+    brandName: "Senco gold",
     location: "KOLKATA",
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
     image: "/ps.avif",
-    category: "food",
+    video:"/SENCO_Ti22_MAIN.mp4",
+    category: "jewellery",
     action: "View Details",
   },
 
@@ -130,7 +132,7 @@ const brands = [
     name: "Top Mughlai Cousine Brand",
     brandName: "Arsalan",
     location: "KOLKATA",
-    
+
     description:
       "Famous Mughlai dishes including biryani, kebabs, rezala & royal cuisine collections.",
     image: "/Arsalan.png",
@@ -139,7 +141,7 @@ const brands = [
   },
 
   {
- id: 12,
+    id: 12,
     name: "Top Darjeeling Tea Brand ",
     brandName: "Makaibari Tea",
     location: "DARJEELING",
@@ -297,7 +299,7 @@ export default function BrandsPage() {
                   Bengal Tourism
                 </span>
               </h2>
-              
+
               <p className="text-lg text-gray-700 leading-relaxed">
                 Join our exclusive network of premium brands and reach thousands of potential customers across Bengal and beyond. Showcase your products, services, and experiences to a targeted audience actively seeking quality offerings.
               </p>
@@ -441,9 +443,6 @@ export default function BrandsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-
-
-
             {filteredBrands.map((brand) => (
               <div
                 key={brand.id}
@@ -453,7 +452,7 @@ export default function BrandsPage() {
                 {/* ================= BRAND NAME ================= */}
                 <div className="px-5 pt-5">
 
-                       <h3 className="
+                  <h3 className="
         text-lg md:text-xl
         font-bold
         text-gray-900
@@ -470,38 +469,49 @@ export default function BrandsPage() {
 
                 {/* ================= IMAGE ================= */}
                 <div className="relative h-70 bg-gray-50 flex items-center justify-center overflow-hidden mt-4">
+                  {brand.video ? (
+                    <video
+                      src={brand.video}
+                      muted
+                      autoPlay
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      className="w-full  h-full object-cover" />
 
-                  {brand.image ? (
-                    <Image
-                      src={brand.image}
-                      alt={brand.name}
-                      fill
-                      className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-orange-50">
+                  )
+                    : brand.image ? (
+                      <Image
+                        src={brand.image}
+                        alt={brand.name}
+                        fill
+                        className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-orange-50">
 
-                      {/* Placeholder */}
-                      <div className="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mb-4 shadow-lg">
-                        <svg
-                          className="w-8 h-8 text-white"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                          <path
-                            fillRule="evenodd"
-                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
+                        {/* Placeholder */}
+                        <div className="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mb-4 shadow-lg">
+                          <svg
+                            className="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path
+                              fillRule="evenodd"
+                              d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+
+                        <p className="text-sm text-gray-500">
+                          Brand Logo / Video
+                        </p>
                       </div>
-
-                      <p className="text-sm text-gray-500">
-                        Brand Logo / Video
-                      </p>
-                    </div>
-                  )}
+                    )}
 
                   {/* Location Badge */}
                   {/* <div className="absolute bottom-4 left-4">
@@ -524,7 +534,7 @@ export default function BrandsPage() {
                   </div> */}
                   {/* Advertiser Name */}
                   <div className="mb-4 ">
-                  <p className="md:text-xl text-lg text-center text-gray-900 font-bold">
+                    <p className="md:text-xl text-lg text-center text-gray-900 font-bold">
                       {brand.brandName}
                     </p>
                   </div>
