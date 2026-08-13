@@ -479,15 +479,14 @@ export default function BrandsPage() {
                     </a>
 
                     {/* View Details */}
-                    <button
-                      onClick={() => {
-                        setSelectedVideo("/add/add2.mp4");
-                        setShowVideoModal(true);
-                      }}
+                     <a
+                      href="https://sencogoldanddiamonds.com/jewellery/category/mens-titanium-jewellery?utm_source=Bengal+Tourism&utm_campaign=Ti22"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:scale-[1.02]"
                     >
                       View Details
-                    </button>
+                    </a>
 
                   </div>
                 </div>
