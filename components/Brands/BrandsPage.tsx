@@ -5,20 +5,9 @@ import Image from "next/image";
 import { Star, MapPin, X } from "lucide-react";
 
 const brands = [
+ 
   {
     id: 1,
-    name: "Top Gold jewellery Brand",
-    brandName: "P C Chandra Jewellers",
-    location: "KOLKATA",
-    description:
-      "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
-    image: "/ps.avif",
-    category: "jewellery",
-    action: "View Details",
-  },
-
-  {
-    id: 2,
     name: "Top Electronic Brand",
     brandName: "Khosla Electronics",
     location: "KOLKATA",
@@ -30,7 +19,7 @@ const brands = [
   },
 
   {
-    id: 3,
+    id: 2,
     name: "Top Bengali Cuisine Brand",
     brandName: "6, Ballygunge Place | Kolkata",
     location: "KOLKATA",
@@ -42,7 +31,7 @@ const brands = [
   },
 
   {
-    id: 4,
+    id: 3,
     name: "Top Mithai Brand",
     brandName: "Balaram Mullick & Radharam Mullick",
     location: "WEST BENGAL",
@@ -54,7 +43,7 @@ const brands = [
   },
 
   {
-    id: 5,
+    id: 4,
     name: "Top Awadhi Couisine",
     brandName: "Oudh 1590",
     location: "KOLKATA",
@@ -66,7 +55,7 @@ const brands = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "Top Handloom Brand",
     brandName: "Tantuja",
     location: "BENGAL",
@@ -78,7 +67,7 @@ const brands = [
   },
 
   {
-    id: 7,
+    id: 6,
     name: "Top Bengal Rice Brand",
     brandName: "Gobindo Bhog from Burdwan",
     location: "WEST BENGAL",
@@ -90,7 +79,7 @@ const brands = [
   },
 
   {
-    id: 8,
+    id: 7,
     name: "Top Boutique Brand",
     brandName: "Advertise your name here",
     location: "KOLKATA",
@@ -102,7 +91,7 @@ const brands = [
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Top Restaurant Brand",
     brandName: "Advertise your name here",
     location: "KOLKATA",
@@ -114,7 +103,7 @@ const brands = [
   },
 
   {
-    id: 10,
+    id: 9,
     name: "Top Bengal Rice Brand",
     brandName: "Bhooter Raja Dilo Bor",
     location: "KOLKATA",
@@ -126,7 +115,7 @@ const brands = [
   },
 
   {
-    id: 11,
+    id: 10,
     name: "Top Mughlai Cousine Brand",
     brandName: "Arsalan",
     location: "KOLKATA",
@@ -139,7 +128,7 @@ const brands = [
   },
 
   {
- id: 12,
+ id: 11,
     name: "Top Darjeeling Tea Brand ",
     brandName: "Makaibari Tea",
     location: "DARJEELING",
@@ -150,7 +139,7 @@ const brands = [
     action: "View Details",
   },
   {
-    id: 13,
+    id: 12,
     name: "Authentic Chinese Cousine",
     brandName: "At China Town",
     location: "KOLKATA",
@@ -161,7 +150,7 @@ const brands = [
     action: "View Details",
   },
   {
-    id: 14,
+    id: 13,
     name: "Top Bengal Snacks Brand",
     brandName: "Mitra Cafe | Kolkata",
     location: "KOLKATA",
