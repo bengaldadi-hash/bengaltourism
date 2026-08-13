@@ -14,7 +14,7 @@ const brands = [
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
     image: "/ps.avif",
-    video:"/SENCO_Ti22_MAIN.mp4",
+    video:"add/add2.mp4",
     category: "jewellery",
     action: "View Details",
   },
