@@ -3,18 +3,16 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Star, MapPin, X } from "lucide-react";
-import { video } from "framer-motion/client";
 
 const brands = [
   {
     id: 1,
     name: "Top Gold jewellery Brand",
-    brandName: "Senco gold",
+    brandName: "P C Chandra Jewellers",
     location: "KOLKATA",
     description:
       "Premium Bengali sweets, rosogolla, sandesh, mishti doi & traditional mithai collections.",
-    image: "",
-    video:"add/add2.mp4",
+    image: "/ps.avif",
     category: "jewellery",
     action: "View Details",
   },
@@ -132,7 +130,7 @@ const brands = [
     name: "Top Mughlai Cousine Brand",
     brandName: "Arsalan",
     location: "KOLKATA",
-
+    
     description:
       "Famous Mughlai dishes including biryani, kebabs, rezala & royal cuisine collections.",
     image: "/Arsalan.png",
@@ -141,7 +139,7 @@ const brands = [
   },
 
   {
-    id: 12,
+ id: 12,
     name: "Top Darjeeling Tea Brand ",
     brandName: "Makaibari Tea",
     location: "DARJEELING",
@@ -299,7 +297,7 @@ export default function BrandsPage() {
                   Bengal Tourism
                 </span>
               </h2>
-
+              
               <p className="text-lg text-gray-700 leading-relaxed">
                 Join our exclusive network of premium brands and reach thousands of potential customers across Bengal and beyond. Showcase your products, services, and experiences to a targeted audience actively seeking quality offerings.
               </p>
@@ -436,12 +434,98 @@ export default function BrandsPage() {
 
           </div>
         </div>
+         <div className="max-w-7xl mx-auto bg-white px-4 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-700 bg-clip-text text-transparent">
+                Top Gold Jewellery Brand
+              </span>
+            </h2>
+
+
+          </div>
+          <div className="grid grid-cols-1 gap-8 items-stretch">
+
+            {/* ================= TOP GOLD JEWELLERY SHOP ================= */}
+            <section className="w-full">
+              <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-yellow-300">
+
+                {/* ================= VIDEO ================= */}
+                <div className="relative bg-black">
+
+                  <video
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                    poster="/brand-home.png"
+                  >
+                    <source src="/add/add2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+
+                </div>
+
+                {/* ================= CONTENT BELOW VIDEO ================= */}
+                <div className="p-2 md:p-8">
+
+                  {/* Heading */}
+                  <div className="mb-5">
+                    <h3 className="text-xl md:text-4xl font-bold text-gray-900 mb-3">
+                      Senco Gold & Diamonds
+                    </h3>
+
+
+                  </div>
+
+
+
+
+                  {/* ================= BUTTONS ================= */}
+                  <div className="flex flex-col sm:flex-row gap-4">
+
+                    {/* WhatsApp Button */}
+                    <a
+                      href="https://wa.me/919804333779?text=Hi%20I%20am%20interested%20in%20your%20jewellery%20collection"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 text-center shadow-lg hover:scale-[1.02]"
+                    >
+                      WhatsApp Us
+                    </a>
+
+                    {/* View Details */}
+                    <button
+                      onClick={() => {
+                        setSelectedVideo("/add/add2.mp4");
+                        setShowVideoModal(true);
+                      }}
+                      className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:scale-[1.02]"
+                    >
+                      View Details
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+          </div>
+        </div>
       </section>
       {/* ================= BRANDS GRID ================= */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+
 
             {filteredBrands.map((brand) => (
               <div
@@ -452,7 +536,7 @@ export default function BrandsPage() {
                 {/* ================= BRAND NAME ================= */}
                 <div className="px-5 pt-5">
 
-                  <h3 className="
+                       <h3 className="
         text-lg md:text-xl
         font-bold
         text-gray-900
@@ -469,49 +553,38 @@ export default function BrandsPage() {
 
                 {/* ================= IMAGE ================= */}
                 <div className="relative h-70 bg-gray-50 flex items-center justify-center overflow-hidden mt-4">
-                  {brand.video ? (
-                    <video
-                      src={brand.video}
-                      muted
-                      autoPlay
-                      loop
-                      playsInline
-                      controls
-                      preload="metadata"
-                      className="w-full  h-full object-cover" />
 
-                  )
-                    : brand.image ? (
-                      <Image
-                        src={brand.image}
-                        alt={brand.name}
-                        fill
-                        className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-orange-50">
+                  {brand.image ? (
+                    <Image
+                      src={brand.image}
+                      alt={brand.name}
+                      fill
+                      className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-orange-50">
 
-                        {/* Placeholder */}
-                        <div className="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mb-4 shadow-lg">
-                          <svg
-                            className="w-8 h-8 text-white"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path
-                              fillRule="evenodd"
-                              d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-
-                        <p className="text-sm text-gray-500">
-                          Brand Logo / Video
-                        </p>
+                      {/* Placeholder */}
+                      <div className="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mb-4 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                          <path
+                            fillRule="evenodd"
+                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
                       </div>
-                    )}
+
+                      <p className="text-sm text-gray-500">
+                        Brand Logo / Video
+                      </p>
+                    </div>
+                  )}
 
                   {/* Location Badge */}
                   {/* <div className="absolute bottom-4 left-4">
@@ -534,7 +607,7 @@ export default function BrandsPage() {
                   </div> */}
                   {/* Advertiser Name */}
                   <div className="mb-4 ">
-                    <p className="md:text-xl text-lg text-center text-gray-900 font-bold">
+                  <p className="md:text-xl text-lg text-center text-gray-900 font-bold">
                       {brand.brandName}
                     </p>
                   </div>
