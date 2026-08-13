@@ -258,7 +258,7 @@ export default function Navbar() {
                                 href="/hotel-booking"
                                 className="bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-yellow-700 transition"
                             >
-                                Hotal Booking
+                            Hotel Booking
                             </Link>
                         </nav>
 
